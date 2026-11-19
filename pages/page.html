@@ -1,0 +1,2290 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Courier Sewa | Booking, AWB Tracking, POD, Rate Cards & GST Invoicing</title>
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/x-icon" href="https://esecrm.com/uploads/branding/global/favicon.png?v=1789641303">
+        <meta name="description" content="Courier Sewa runs your whole courier business in one platform - shipment booking with auto AWB and barcode, zone and slab rate cards, proof of delivery, public tracking, GST-ready invoicing, ledger, reports, attendance and payroll.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://couriersewa.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Courier Sewa">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:title" content="Courier Sewa | Booking, AWB Tracking, POD, Rate Cards & GST Invoicing">
+    <meta property="og:description" content="Courier Sewa runs your whole courier business in one platform - shipment booking with auto AWB and barcode, zone and slab rate cards, proof of delivery, public tracking, GST-ready invoicing, ledger, reports, attendance and payroll.">
+    <meta property="og:url" content="https://couriersewa.com">
+    <meta property="og:image" content="https://couriersewa.com/og/og-image.jpg?v=1793197707">
+    <meta property="og:image:secure_url" content="https://couriersewa.com/og/og-image.jpg?v=1793197707">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Courier Sewa - run your courier business in one platform">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Courier Sewa | Booking, AWB Tracking, POD, Rate Cards & GST Invoicing">
+    <meta name="twitter:description" content="Courier Sewa runs your whole courier business in one platform - shipment booking with auto AWB and barcode, zone and slab rate cards, proof of delivery, public tracking, GST-ready invoicing, ledger, reports, attendance and payroll.">
+    <meta name="twitter:image" content="https://couriersewa.com/og/og-image.jpg?v=1793197707">
+    <meta name="twitter:image:alt" content="Courier Sewa - run your courier business in one platform">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Courier Sewa","url":"https://couriersewa.com","logo":"https://couriersewa.com/vendor/esecrm/images/logo.png?v=1790414564","email":"mza9282@gmail.com","telephone":"+91 95048 64450","address":{"@type":"PostalAddress","streetAddress":"Patna, Bihar","addressLocality":"Patna","postalCode":"","addressRegion":"Bihar","addressCountry":"IN"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Courier Sewa","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://couriersewa.com","description":"Courier Sewa runs your whole courier business in one platform - shipment booking with auto AWB and barcode, zone and slab rate cards, proof of delivery, public tracking, GST-ready invoicing, ledger, reports, attendance and payroll.","offers":{"@type":"AggregateOffer","priceCurrency":"INR","lowPrice":"0.00","highPrice":"5000.00","offerCount":"3"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long is the free trial, and what is left out of it?","acceptedAnswer":{"@type":"Answer","text":"The trial runs for 30 days with every module switched on â€” bookings, POD, quotations, invoices, ledger, expenses, clients, receivers, complaints, enquiries and reports. Nothing is held back, so what you test is what you get."}},{"@type":"Question","name":"Can my customers track a shipment without an account?","acceptedAnswer":{"@type":"Answer","text":"Yes. The tracking page is public and accepts either the AWB number or the barcode/CN number. You can also embed the same tracker in your own website with a single iframe â€” the snippet is in the Tools section above."}},{"@type":"Question","name":"How is chargeable weight calculated?","acceptedAnswer":{"@type":"Answer","text":"Volumetric weight is (L Ã— W Ã— H) divided by your carrier's divisor â€” commonly 5000, 4500 or 4000 â€” and the chargeable weight is whichever is higher, actual or volumetric. Bookings apply that automatically against the matching weight slab on the rate card."}},{"@type":"Question","name":"Does it handle multiple carriers, branches and rate cards?","acceptedAnswer":{"@type":"Answer","text":"That is the normal setup. You define your carriers, centers and zones, then build a rate card per carrier, mode and weight slab. Rate cards can be cloned between carriers so a new partner takes minutes, not an afternoon."}},{"@type":"Question","name":"Are the invoices GST-ready?","acceptedAnswer":{"@type":"Answer","text":"Yes â€” invoices carry GST and TDS handling, charges can be flat or percentage-based, and there are three print formats to match how your clients expect to receive them. Payments are recorded against the invoice and flow into the client ledger."}},{"@type":"Question","name":"What happens when I outgrow my plan mid-month?","acceptedAnswer":{"@type":"Answer","text":"Buy an add-on instead of changing plan: extra bookings for the cycle, or extra team logins. Your Admin account never consumes a seat, so a plan with one team login means an Admin plus one staff member."}},{"@type":"Question","name":"Can the panel carry our own branding?","acceptedAnswer":{"@type":"Answer","text":"Brand colours, corner radius, fonts and the hero image are configurable from the panel, and your company logo goes on every printed invoice and POD. The product logo and favicon themselves are set once for the whole ESE platform."}}]}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="/css2" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/all.min.css">
+    <link rel="stylesheet" href="../styles/landing.css">
+    <link rel="stylesheet" href="../styles/platform.css">
+    <style id="lsPalette">:root { --ink: #001b0c; --primary: #002b12; --primary-light: #003d1a; --primary-rgb: 0, 43, 18; --accent: #007205; --accent-rgb: 0, 114, 5; --accent-2: #00a308; --accent-bright: #7ee787; --accent-bright-rgb: 126, 231, 135; --accent-soft: #7ee787; --accent-3: #f5c518; --accent-3-rgb: 245, 197, 24; --accent-gold-2: #dcae05; --on-accent-2: #ffffff; --on-accent-3: #2a1f00; --bg: #f4f8f5; --line: #e3ece6; --line-2: #d2e0d7; --text: #10231a; --text-2: #3f5a4a; --muted: #6b8578; --bar-bg: #001d0c; --nav-bg: #002b12; --nav-stuck: rgba(0, 27, 12, .96); --menu-bg: #001d0c; --footer-bg: #001b0c; --code-bg: #001b0c; --code-text: #b7f7c0; --overlay-bg: rgba(0, 27, 12, .62); --hero-overlay: linear-gradient(100deg, rgba(0, 20, 9, .96) 0%, rgba(0, 43, 18, .9) 42%, rgba(0, 61, 26, .66) 72%, rgba(0, 82, 31, .48) 100%); --grad-brand: linear-gradient(135deg, #007205 0%, #00a308 55%, #f5c518 100%); --grad-accent: linear-gradient(135deg, #007205, #00a308); --grad-primary: linear-gradient(135deg, #002b12, #007205); --grad-green: linear-gradient(135deg, #00a308 0%, #007205 100%); --grad-green-2: linear-gradient(135deg, #007205, #00a308); --grad-deep: linear-gradient(150deg, #002b12 0%, #003d1a 55%, #00521f 100%); --grad-gold: linear-gradient(135deg, #f5c518 0%, #dcae05 100%); --grad-cta: linear-gradient(135deg, #002b12 0%, #00521f 52%, #b8860b 140%); --grad-text-dark: linear-gradient(120deg, #7ee787 0%, #00a308 45%, #f5c518 100%); }</style>
+    
+</head>
+<body>
+
+
+<div class="ls-topbar">
+    <div class="ls-shell">
+        <div class="ls-topbar-left">
+            <span><i class="fa-solid fa-phone"></i><a href="tel:+91 95048 64450">+91 95048 64450</a></span>
+            <span class="ls-hide-sm"><i class="fa-solid fa-envelope"></i><a href="mailto:mza9282@gmail.com">mza9282@gmail.com</a></span>
+        </div>
+        <div class="ls-topbar-social">
+            <a href="https://wa.me/919504864450" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:mza9282@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+91 95048 64450" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="ls-nav-wrap">
+    <nav class="ls-nav is-stuck" id="lsNav">
+        <div class="ls-shell">
+            <a class="ls-brand" href="../index.html">
+                <img src="../images/logo.png" alt="Courier Sewa" width="150" height="40">
+            </a>
+
+            <button class="ls-nav-toggle" id="lsNavToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="lsNavLinks">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="ls-nav-links" id="lsNavLinks">
+                                                            <a class="ls-nav-link" href="#home">Home</a>
+                                            <a class="ls-nav-link" href="#modules">Modules</a>
+                                            <a class="ls-nav-link is-active" href="#platform">Platform</a>
+                                            <a class="ls-nav-link" href="#tools">Tools</a>
+                                            <a class="ls-nav-link" href="#pricing">Pricing</a>
+                                            <a class="ls-nav-link" href="../pages/tracking.html">Track</a>
+                                    
+                <a class="ls-nav-link" href="../pages/login.html">
+                    <i class="fa-solid fa-right-to-bracket"></i> Login
+                </a>
+
+                <div class="ls-nav-cta">
+                                            <a class="ls-btn ls-btn--ghost ls-btn--sm" href="../pages/register.html">
+                            <i class="fa-solid fa-user-plus"></i> Sign Up
+                        </a>
+                                        <a class="ls-btn ls-btn--gold ls-btn--sm" href="../pages/register.html">Start Free Trial</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+    
+    <section class="ls-hero" id="home" style="background-image: url('../images/4GBhvTsOA4wFxWOKZZIVF6yKUQO5DVGQxLbKV6ZX.jpg');">
+        <div class="ls-shell">
+            <div class="ls-hero-inner">
+                <div>
+                    <div class="ls-badge">
+                        <span class="ls-badge-dot"></span>
+                        Courier &amp; Logistics ERP — Multi-Branch Ready
+                    </div>
+
+                    <h1>Book, Track and Bill<br><span class="ls-grad-text">Every Shipment</span> in One Place.</h1>
+
+                    <p class="ls-hero-desc">
+                        From booking and auto AWB generation to proof of delivery, GST-ready invoices
+                        and profit reports — Courier Sewa replaces the spreadsheets, the
+                        WhatsApp status updates and the guesswork with one connected system.
+                    </p>
+
+                    <div class="ls-hero-actions">
+                        <a href="../pages/register.html" class="ls-btn ls-btn--gold">
+                            Start Free Trial <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="https://wa.me/919504864450" target="_blank" rel="noopener" class="ls-btn ls-btn--ghost">
+                            <i class="fa-brands fa-whatsapp"></i> Book a Demo
+                        </a>
+                    </div>
+
+                    
+                    <form class="ls-track-form" action="https://couriersewa.com/tracking/search" method="GET" role="search">
+                        <i class="fa-solid fa-magnifying-glass ls-track-ico"></i>
+                        <input type="text" name="awb" maxlength="100" required placeholder="Track a shipment - enter AWB or CN number" aria-label="AWB or CN number" value="" fdprocessedid="jprs0l">
+                        <button type="submit" class="ls-btn ls-btn--green ls-btn--sm" fdprocessedid="pz7em6">
+                            Track <i class="fa-solid fa-location-crosshairs"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div>
+                    
+                    <div class="ls-console" id="enquiry">
+    <div class="ls-console-bar">
+        <span class="ls-console-dot"></span>
+        <span class="ls-console-dot"></span>
+        <span class="ls-console-dot"></span>
+        <span class="ls-console-title">Send us an Enquiry</span>
+    </div>
+    <div class="ls-console-body">
+        
+        <form action="https://esecrm.com/enquiry-submit" method="POST">
+            <input type="hidden" name="kind" value="lead">
+            <input type="hidden" name="return" value="https://couriersewa.com">
+            
+            <input type="text" name="website" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+
+            <div class="ls-field">
+                <input type="text" name="name" maxlength="255" required class="ls-input" placeholder="Your name" aria-label="Your name" value="" fdprocessedid="fdmq6i">
+                            </div>
+
+            <div class="ls-field">
+                <div class="ls-field-row">
+                    <div>
+                        <input type="email" name="email" maxlength="255" class="ls-input" placeholder="Email address" aria-label="Email address" value="" fdprocessedid="xm9x4du">
+                                            </div>
+                    <div>
+                        <input type="tel" name="phone" maxlength="32" class="ls-input" placeholder="Phone number" aria-label="Phone number" value="" fdprocessedid="guiy6h">
+                                            </div>
+                </div>
+            </div>
+
+                            <input type="hidden" name="product" value="cep">
+            
+            <div class="ls-field">
+                <textarea name="message" rows="3" maxlength="5000" class="ls-textarea" placeholder="Tell us briefly what you need" aria-label="Message"></textarea>
+                            </div>
+
+            <button type="submit" class="ls-btn ls-btn--green ls-btn--block" fdprocessedid="8f189n">
+                Send Enquiry <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+            <p class="ls-form-note">
+                Prefer chat? <a href="https://wa.me/919504864450" target="_blank" rel="noopener">Message us on WhatsApp</a>
+            </p>
+        </form>
+    </div>
+</div>
+
+                    <div class="ls-hero-stats" style="margin-top: 24px;">
+                        <div class="ls-hero-stat">
+                            <span class="ls-hero-stat-ico"><i class="fa-solid fa-boxes-stacked"></i></span>
+                            <div>
+                                <b>1K+</b>
+                                <span>Shipments Booked</span>
+                            </div>
+                        </div>
+                        <div class="ls-hero-stat">
+                            <span class="ls-hero-stat-ico"><i class="fa-solid fa-indian-rupee-sign"></i></span>
+                            <div>
+                                <b>5.6L+</b>
+                                <span>Revenue Tracked</span>
+                            </div>
+                        </div>
+                        <div class="ls-hero-stat">
+                            <span class="ls-hero-stat-ico"><i class="fa-solid fa-shield-halved"></i></span>
+                            <div>
+                                <b>99.9%</b>
+                                <span>Uptime SLA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <section class="ls-marquee" aria-label="Clients we work with">
+    <div class="ls-marquee-inner">
+        <span class="ls-marquee-label">Trusted By</span>
+        <div class="ls-marquee-track">
+            <div class="ls-marquee-run">
+                
+                                                            <img src="../images/arrope5vwagv.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/9lqye19gukcu.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/5cmghshvx3vi.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/ofbj8fbdzwtl.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/jph7p5tqwrya.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/njeefqars6ai.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/nvnkhipqgzuh.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/0cc1lvp6sgqi.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/mkr6aiah8fqs.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/dza9hs66oefi.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/n5irynwci0ie.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/ts12hnp4khnq.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/wukkdlpqyqhz.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/i75qscra8t7u.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/cdxvsflq8owz.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/jwb8bc7kxzjz.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/btxwejshgtzg.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/56vjztcev935.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/foptr9lrnxwm.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/vpfigqbhwr7b.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                                                                <img src="../images/arrope5vwagv.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/9lqye19gukcu.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/5cmghshvx3vi.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/ofbj8fbdzwtl.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/jph7p5tqwrya.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/njeefqars6ai.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/nvnkhipqgzuh.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/0cc1lvp6sgqi.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/mkr6aiah8fqs.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/dza9hs66oefi.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/n5irynwci0ie.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/ts12hnp4khnq.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/wukkdlpqyqhz.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/i75qscra8t7u.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/cdxvsflq8owz.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/jwb8bc7kxzjz.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/btxwejshgtzg.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/56vjztcev935.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/foptr9lrnxwm.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                            <img src="../images/vpfigqbhwr7b.jpg" alt="" aria-hidden="true" loading="lazy" width="120" height="46">
+                                                </div>
+        </div>
+    </div>
+</section>
+
+    
+    <section class="ls-section ls-light" id="why">
+        <div class="ls-shell">
+            <div class="ls-head-center reveal is-visible">
+                <span class="ls-eyebrow">Why Courier ERP</span>
+                <h2 class="ls-h2">Logistics Made <span class="ls-grad-text">Effortless.</span></h2>
+                <p class="ls-lede">One system for the whole shipment lifecycle — booked, moved, delivered,
+                    invoiced and reconciled, without re-typing the same consignment four times.</p>
+            </div>
+
+            <div class="ls-cards">
+                <div class="ls-card reveal is-visible">
+                    <div class="ls-ico ls-ico--brand"><i class="fa-solid fa-route"></i></div>
+                    <h4>End-to-End Tracking</h4>
+                    <p>Every shipment carries its own AWB and status history, from pickup through
+                        each transit scan to a signed proof of delivery.</p>
+                </div>
+                <div class="ls-card reveal is-visible">
+                    <div class="ls-ico ls-ico--gold"><i class="fa-solid fa-calculator"></i></div>
+                    <h4>Rates That Price Themselves</h4>
+                    <p>Zone and weight-slab rate cards per carrier and mode, with volumetric weight
+                        and extra charges applied automatically at booking time.</p>
+                </div>
+                <div class="ls-card reveal is-visible">
+                    <div class="ls-ico ls-ico--green"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                    <h4>Billing Without Leakage</h4>
+                    <p>Turn delivered bookings into GST-ready invoices in a click, record part
+                        payments, and watch every client balance in a running ledger.</p>
+                </div>
+                <div class="ls-card reveal is-visible">
+                    <div class="ls-ico ls-ico--deep"><i class="fa-solid fa-chart-column"></i></div>
+                    <h4>Profit You Can See</h4>
+                    <p>Revenue, carrier cost, expenses and net margin on one dashboard — by
+                        client, by carrier, by month, exportable whenever you need it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="ls-section ls-dark" id="modules">
+        <span class="ls-blob ls-blob--green" style="width:520px;height:520px;top:-160px;right:-120px;"></span>
+        <span class="ls-blob ls-blob--gold" style="width:420px;height:420px;bottom:-180px;left:-140px;"></span>
+        <div class="ls-shell" style="position:relative;z-index:1;">
+            <div class="ls-head-center reveal is-visible">
+                <span class="ls-eyebrow">Core Modules</span>
+                <h2 class="ls-h2">Everything Logistics Needs. <span class="ls-grad-text">In One Platform.</span></h2>
+                <p class="ls-lede">Seventeen working modules — not a roadmap. Each one is switched on
+                    per plan and per user role, so your team only sees what it should.</p>
+            </div>
+
+            <div class="ls-cards ls-cards--3">
+                <div class="ls-mod reveal is-visible">
+                    <div class="ls-mod-head">
+                        <div class="ls-ico ls-ico--brand"><i class="fa-solid fa-box"></i></div>
+                        <div>
+                            <h4>Bookings &amp; AWB</h4>
+                            <div class="ls-tags">
+                                <span class="ls-tag">Auto AWB</span>
+                                <span class="ls-tag">Barcode</span>
+                                <span class="ls-tag">CN Print</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Book with sender, receiver, weight and dimensions. AWB numbers generate from your
+                        own numbering rules, with barcode and consignment note ready to print.</p>
+                </div>
+
+                <div class="ls-mod reveal is-visible">
+                    <div class="ls-mod-head">
+                        <div class="ls-ico ls-ico--gold"><i class="fa-solid fa-scale-balanced"></i></div>
+                        <div>
+                            <h4>Rate Engine &amp; Zones</h4>
+                            <div class="ls-tags">
+                                <span class="ls-tag">Weight Slabs</span>
+                                <span class="ls-tag">Zones</span>
+                                <span class="ls-tag">Volumetric</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Per-carrier rate cards by zone, mode and weight slab, cloneable between carriers,
+                        with volumetric weight and additional charges built into the calculation.</p>
+                </div>
+
+                <div class="ls-mod reveal is-visible">
+                    <div class="ls-mod-head">
+                        <div class="ls-ico ls-ico--green"><i class="fa-solid fa-file-signature"></i></div>
+                        <div>
+                            <h4>Quotations</h4>
+                            <div class="ls-tags">
+                                <span class="ls-tag">Clone</span>
+                                <span class="ls-tag">PDF</span>
+                                <span class="ls-tag">Email</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Quote new business off the same rate cards you bill from, clone last month's
+                        quote for a repeat client, and send a branded PDF straight from the system.</p>
+                </div>
+
+                <div class="ls-mod reveal is-visible">
+                    <div class="ls-mod-head">
+                        <div class="ls-ico ls-ico--deep"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                        <div>
+                            <h4>Proof of Delivery</h4>
+                            <div class="ls-tags">
+                                <span class="ls-tag">Delivery Staff</span>
+                                <span class="ls-tag">Status History</span>
+                                <span class="ls-tag">POD Print</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Assign runs to delivery staff, update status as the consignment moves, capture
+                        the POD, and keep a dated history entry for every change.</p>
+                </div>
+
+                <div class="ls-mod reveal is-visible">
+                    <div class="ls-mod-head">
+                        <div class="ls-ico ls-ico--brand"><i class="fa-solid fa-satellite-dish"></i></div>
+                        <div>
+                            <h4>Public Tracking</h4>
+                            <div class="ls-tags">
+                                <span class="ls-tag">AWB or CN</span>
+                                <span class="ls-tag">Timeline</span>
+                                <span class="ls-tag">Embeddable</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Your customers track themselves — no login, no phone call. Drop the same
+                        tracking widget into your own website with one iframe.</p>
+                </div>
+
+                <div class="ls-mod reveal is-visible">
+                    <div class="ls-mod-head">
+                        <div class="ls-ico ls-ico--gold"><i class="fa-solid fa-file-invoice"></i></div>
+                        <div>
+                            <h4>Invoices &amp; Ledger</h4>
+                            <div class="ls-tags">
+                                <span class="ls-tag">3 Formats</span>
+                                <span class="ls-tag">GST Ready</span>
+                                <span class="ls-tag">Payments</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Generate invoices from delivered bookings, pick one of three print formats,
+                        record payments against them, and reconcile in the client ledger.</p>
+                </div>
+
+                <div class="ls-mod reveal is-visible">
+                    <div class="ls-mod-head">
+                        <div class="ls-ico ls-ico--green"><i class="fa-solid fa-receipt"></i></div>
+                        <div>
+                            <h4>Expenses</h4>
+                            <div class="ls-tags">
+                                <span class="ls-tag">Daily Entry</span>
+                                <span class="ls-tag">Export</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Log fuel, freight, staff and office spend against the month it belongs to, so the
+                        profit figure on your dashboard is the real one.</p>
+                </div>
+
+                <div class="ls-mod reveal is-visible">
+                    <div class="ls-mod-head">
+                        <div class="ls-ico ls-ico--deep"><i class="fa-solid fa-address-book"></i></div>
+                        <div>
+                            <h4>Clients &amp; Receivers</h4>
+                            <div class="ls-tags">
+                                <span class="ls-tag">Address Book</span>
+                                <span class="ls-tag">History</span>
+                                <span class="ls-tag">Billing Prefs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Account clients and walk-in customers, saved receiver addresses that auto-fill
+                        the next booking, and every shipment a client ever sent in one view.</p>
+                </div>
+
+                <div class="ls-mod reveal is-visible">
+                    <div class="ls-mod-head">
+                        <div class="ls-ico ls-ico--brand"><i class="fa-solid fa-headset"></i></div>
+                        <div>
+                            <h4>Complaints &amp; Enquiries</h4>
+                            <div class="ls-tags">
+                                <span class="ls-tag">Ticket IDs</span>
+                                <span class="ls-tag">Priorities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Log a complaint against the AWB it belongs to, set a priority, and track it to
+                        resolution — with sales enquiries handled in the same place.</p>
+                </div>
+
+                <div class="ls-mod reveal is-visible">
+                    <div class="ls-mod-head">
+                        <div class="ls-ico ls-ico--gold"><i class="fa-solid fa-chart-line"></i></div>
+                        <div>
+                            <h4>Reports &amp; Dashboard</h4>
+                            <div class="ls-tags">
+                                <span class="ls-tag">Revenue</span>
+                                <span class="ls-tag">Status Mix</span>
+                                <span class="ls-tag">Exports</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Booking reports you can filter by client, carrier, status and date range, plus a
+                        live dashboard of revenue, cost and delivery performance.</p>
+                </div>
+
+                <div class="ls-mod reveal is-visible">
+                    <div class="ls-mod-head">
+                        <div class="ls-ico ls-ico--green"><i class="fa-solid fa-user-clock"></i></div>
+                        <div>
+                            <h4>Attendance &amp; Payroll</h4>
+                            <div class="ls-tags">
+                                <span class="ls-tag">Shifts</span>
+                                <span class="ls-tag">Leaves</span>
+                                <span class="ls-tag">Payslips</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Auto or manual check-in, shift rosters, leave and regularisation approvals,
+                        salary advances, and monthly payroll generated from the attendance itself.</p>
+                </div>
+
+                <div class="ls-mod reveal is-visible">
+                    <div class="ls-mod-head">
+                        <div class="ls-ico ls-ico--deep"><i class="fa-solid fa-user-shield"></i></div>
+                        <div>
+                            <h4>Users, Roles &amp; Access</h4>
+                            <div class="ls-tags">
+                                <span class="ls-tag">Per-Module</span>
+                                <span class="ls-tag">Role Presets</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Create staff logins, assign a role, and tick exactly which modules and actions
+                        that role may use. Everything else stays invisible to them.</p>
+                </div>
+
+                <div class="ls-mod reveal is-visible">
+                    <div class="ls-mod-head">
+                        <div class="ls-ico ls-ico--brand"><i class="fa-solid fa-person-biking"></i></div>
+                        <div>
+                            <h4>Delivery Staff &amp; Third-Party Legs</h4>
+                            <div class="ls-tags">
+                                <span class="ls-tag">Rider Assign</span>
+                                <span class="ls-tag">Partner Status</span>
+                                <span class="ls-tag">POD History</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Assign a rider to a shipment and track the delivery attempt against them. Where a
+                        leg runs on a partner network, record the third-party status against the same AWB
+                        so the customer sees one continuous trail.</p>
+                </div>
+
+                <div class="ls-mod reveal is-visible">
+                    <div class="ls-mod-head">
+                        <div class="ls-ico ls-ico--gold"><i class="fa-solid fa-code-branch"></i></div>
+                        <div>
+                            <h4>Branches &amp; Centers</h4>
+                            <div class="ls-tags">
+                                <span class="ls-tag">Multi-Branch</span>
+                                <span class="ls-tag">Per-Center Data</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Run more than one office or hub on one login. Bookings, expenses and reports carry
+                        their center, so branch performance is a filter rather than a separate spreadsheet.</p>
+                </div>
+
+                <div class="ls-mod reveal is-visible">
+                    <div class="ls-mod-head">
+                        <div class="ls-ico ls-ico--green"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div>
+                            <h4>Global Search</h4>
+                            <div class="ls-tags">
+                                <span class="ls-tag">AWB</span>
+                                <span class="ls-tag">Client</span>
+                                <span class="ls-tag">Invoice</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>One search box across bookings, clients, receivers and invoices. Type an AWB, a
+                        phone number or a company name and go straight to the record.</p>
+                </div>
+
+                <div class="ls-mod reveal is-visible">
+                    <div class="ls-mod-head">
+                        <div class="ls-ico ls-ico--deep"><i class="fa-solid fa-credit-card"></i></div>
+                        <div>
+                            <h4>Billing &amp; Transactions</h4>
+                            <div class="ls-tags">
+                                <span class="ls-tag">Self-Serve</span>
+                                <span class="ls-tag">Add-Ons</span>
+                                <span class="ls-tag">History</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Buy or renew your plan yourself, add extra users or modules mid-cycle, and keep a
+                        transaction history. Billing stays reachable even when a subscription has lapsed.</p>
+                </div>
+
+                <div class="ls-mod reveal is-visible">
+                    <div class="ls-mod-head">
+                        <div class="ls-ico ls-ico--brand"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp Notifications</h4>
+                            <div class="ls-tags">
+                                <span class="ls-tag">Your Number</span>
+                                <span class="ls-tag">Booking Alerts</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Configure your own WhatsApp credentials and let the system send booking and status
+                        updates from your number, so customers stop calling the office for a location.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="ls-section ls-white" id="workflow">
+        <div class="ls-shell">
+            <div class="ls-head-center reveal is-visible">
+                <span class="ls-eyebrow">How It Works</span>
+                <h2 class="ls-h2">Five Steps, <span class="ls-grad-text">One Trail of Data.</span></h2>
+                <p class="ls-lede">Each step reuses what the last one captured — nothing is entered twice,
+                    and nothing gets billed by memory.</p>
+            </div>
+
+            <div class="ls-flow">
+                <div class="ls-step reveal is-visible">
+                    <div class="ls-step-num">1</div>
+                    <h4>Book</h4>
+                    <p>Pick the client, fill sender and receiver, weight and dimensions. Rates apply themselves.</p>
+                </div>
+                <div class="ls-step reveal is-visible">
+                    <div class="ls-step-num">2</div>
+                    <h4>Label</h4>
+                    <p>AWB number and barcode generate instantly; print the consignment note and stick it on.</p>
+                </div>
+                <div class="ls-step reveal is-visible">
+                    <div class="ls-step-num">3</div>
+                    <h4>Move</h4>
+                    <p>Assign delivery staff, update status at each hop. Customers follow it on public tracking.</p>
+                </div>
+                <div class="ls-step reveal is-visible">
+                    <div class="ls-step-num">4</div>
+                    <h4>Deliver</h4>
+                    <p>Capture proof of delivery against the AWB. The delivery date stamps itself.</p>
+                </div>
+                <div class="ls-step reveal is-visible">
+                    <div class="ls-step-num">5</div>
+                    <h4>Bill</h4>
+                    <p>Pull the period's bookings into a GST-ready invoice, record payment, close the ledger.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="ls-section ls-light" id="platform">
+        <div class="ls-shell">
+            <div class="ls-head-center reveal is-visible">
+                <span class="ls-eyebrow">Under The Hood</span>
+                <h2 class="ls-h2">Built for How Courier Companies <span class="ls-grad-text">Actually Run.</span></h2>
+                <p class="ls-lede">The parts that usually force a custom build are already configuration here.</p>
+            </div>
+
+            <div class="ls-bento">
+                <div class="ls-bento-card is-wide reveal is-visible">
+                    <div class="ls-ico ls-ico--soft"><i class="fa-solid fa-sliders"></i></div>
+                    <h4>Master Data That Fits Your Network</h4>
+                    <p>Set the system up once around your own operation instead of bending your
+                        operation around the software.</p>
+                    <div class="ls-checklist">
+                        <div class="ls-check"><i class="fa-solid fa-check"></i> Carriers, centers and delivery statuses you define</div>
+                        <div class="ls-check"><i class="fa-solid fa-check"></i> States, cities and pincodes with bulk CSV import</div>
+                        <div class="ls-check"><i class="fa-solid fa-check"></i> Zones, shipping modes, package types and charges</div>
+                    </div>
+                </div>
+
+                <div class="ls-bento-card is-wide reveal is-visible">
+                    <div class="ls-ico ls-ico--soft"><i class="fa-solid fa-hashtag"></i></div>
+                    <h4>Numbering On Your Terms</h4>
+                    <p>AWB and invoice numbers follow your prefix, width and starting point — so the
+                        series in the system matches the series on your stationery and in your books.</p>
+                    <div class="ls-checklist">
+                        <div class="ls-check"><i class="fa-solid fa-check"></i> Configurable AWB number rules and barcode series</div>
+                        <div class="ls-check"><i class="fa-solid fa-check"></i> Separate invoice numbering settings per company</div>
+                        <div class="ls-check"><i class="fa-solid fa-check"></i> Duplicate-booking detection before an AWB is issued</div>
+                    </div>
+                </div>
+
+                <div class="ls-bento-card reveal is-visible">
+                    <div class="ls-ico ls-ico--soft"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <h4>Money, End to End</h4>
+                    <p>Charges as flat amounts or percentages, GST and TDS handling, part payments,
+                        client ledger and a downloadable statement.</p>
+                </div>
+
+                <div class="ls-bento-card reveal is-visible">
+                    <div class="ls-ico ls-ico--soft"><i class="fa-solid fa-palette"></i></div>
+                    <h4>White-Label Branding</h4>
+                    <p>Your logo, favicon, brand colours, fonts and hero image across the whole
+                        panel, invoices and PODs — set from a single screen.</p>
+                </div>
+
+                <div class="ls-bento-card reveal is-visible">
+                    <div class="ls-ico ls-ico--soft"><i class="fa-solid fa-layer-group"></i></div>
+                    <h4>Plans &amp; Add-Ons</h4>
+                    <p>Outgrew your booking allowance mid-month? Top up bookings or team seats
+                        without changing plan.</p>
+                </div>
+
+                <div class="ls-bento-card reveal is-visible">
+                    <div class="ls-ico ls-ico--soft"><i class="fa-solid fa-gift"></i></div>
+                    <h4>Refer &amp; Earn</h4>
+                    <p>Every account gets a referral link, earns points on approved sign-ups and can
+                        put them against the next invoice.</p>
+                </div>
+
+                <div class="ls-bento-card reveal is-visible">
+                    <div class="ls-ico ls-ico--soft"><i class="fa-solid fa-circle-question"></i></div>
+                    <h4>Help Where You Work</h4>
+                    <p>A searchable in-app help centre plus one-tap WhatsApp support from every
+                        screen, so staff never leave the job to find an answer.</p>
+                </div>
+
+                <div class="ls-bento-card reveal is-visible">
+                    <div class="ls-ico ls-ico--soft"><i class="fa-solid fa-list-check"></i></div>
+                    <h4>Tasks &amp; Notifications</h4>
+                    <p>A personal to-do list with recurring items and due dates, plus in-app
+                        notifications for what needs attention today.</p>
+                </div>
+
+                <div class="ls-bento-card is-wide reveal is-visible">
+                    <div class="ls-ico ls-ico--soft"><i class="fa-solid fa-file-arrow-up"></i></div>
+                    <h4>Bring Your Network In, In Bulk</h4>
+                    <p>Nobody types a pincode list by hand. Import states, cities and pincodes together,
+                        and load zones from a CSV with a sample file to work from — then flush and
+                        reload if the network changes.</p>
+                    <div class="ls-checklist">
+                        <span class="ls-check"><i class="fa-solid fa-check"></i> State, city &amp; pincode import</span>
+                        <span class="ls-check"><i class="fa-solid fa-check"></i> Zone CSV with sample</span>
+                        <span class="ls-check"><i class="fa-solid fa-check"></i> Rate card cloning</span>
+                        <span class="ls-check"><i class="fa-solid fa-check"></i> Flush &amp; reload safely</span>
+                    </div>
+                </div>
+
+                <div class="ls-bento-card reveal is-visible">
+                    <div class="ls-ico ls-ico--soft"><i class="fa-solid fa-user-check"></i></div>
+                    <h4>Approval Before Activation</h4>
+                    <p>New sign-ups land in a pending queue and start only once approved, so nobody
+                        provisions themselves onto your platform unnoticed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="ls-section ls-dark" id="roles">
+        <span class="ls-blob ls-blob--green" style="width:460px;height:460px;top:-140px;left:-120px;"></span>
+        <div class="ls-shell" style="position:relative;z-index:1;">
+            <div class="ls-head-center reveal is-visible">
+                <span class="ls-eyebrow">One System, Four Views</span>
+                <h2 class="ls-h2">Everyone Sees <span class="ls-grad-text">Their Own Job.</span></h2>
+                <p class="ls-lede">Role presets ship ready to use, and every module and action can still be
+                    ticked on or off per role.</p>
+            </div>
+
+            <div class="ls-cards">
+                <div class="ls-role reveal is-visible">
+                    <span class="ls-role-chip ls-role-chip--admin"><i class="fa-solid fa-crown"></i> Admin</span>
+                    <h4>Runs the company</h4>
+                    <p>Full access: masters, rates, users and roles, billing, invoices, reports and the
+                        subscription itself.</p>
+                </div>
+                <div class="ls-role reveal is-visible">
+                    <span class="ls-role-chip ls-role-chip--manager"><i class="fa-solid fa-user-tie"></i> Manager</span>
+                    <h4>Runs the day</h4>
+                    <p>Bookings, POD, clients, complaints and reports for the branch — without touching
+                        company-level settings.</p>
+                </div>
+                <div class="ls-role reveal is-visible">
+                    <span class="ls-role-chip ls-role-chip--agent"><i class="fa-solid fa-headset"></i> Sales Agent</span>
+                    <h4>Wins the business</h4>
+                    <p>Quotations, clients, enquiries and their own bookings, with pricing pulled from the
+                        rate cards you approved.</p>
+                </div>
+                <div class="ls-role reveal is-visible">
+                    <span class="ls-role-chip ls-role-chip--rider"><i class="fa-solid fa-motorcycle"></i> Field Rider</span>
+                    <h4>Moves the box</h4>
+                    <p>The delivery list, status updates and proof of delivery — nothing else on the
+                        screen to get in the way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="ls-section ls-white" id="tools">
+        <div class="ls-shell">
+            <div class="ls-head-center reveal is-visible">
+                <span class="ls-eyebrow">Free Tools</span>
+                <h2 class="ls-h2">Use It Before You <span class="ls-grad-text">Sign Up.</span></h2>
+                <p class="ls-lede">Three things on this page work right now, no account needed.</p>
+            </div>
+
+            <div class="ls-cards ls-cards--3">
+                <div class="ls-tool reveal">
+                    <div class="ls-ico ls-ico--brand"><i class="fa-solid fa-magnifying-glass-location"></i></div>
+                    <h4>Track a Shipment</h4>
+                    <p>Enter an AWB or CN number and see the full status timeline, with the proof of
+                        delivery attached once it lands.</p>
+                    <div class="ls-tool-foot">
+                        <a href="../pages/tracking.html" class="ls-btn ls-btn--line ls-btn--sm">
+                            Open Tracking <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ls-tool reveal">
+                    <div class="ls-ico ls-ico--gold"><i class="fa-solid fa-cube"></i></div>
+                    <h4>Volumetric Calculator</h4>
+                    <p>Work out chargeable weight from length, width and height against the divisor your
+                        carrier uses — 5000, 4500 or 4000.</p>
+                    <div class="ls-tool-foot">
+                        <button type="button" class="ls-btn ls-btn--line ls-btn--sm" data-modal-open="volCalc" fdprocessedid="3mcyfzb">
+                            Calculate Now <i class="fa-solid fa-calculator"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="ls-tool reveal">
+                    <div class="ls-ico ls-ico--green"><i class="fa-solid fa-code"></i></div>
+                    <h4>Embed Tracking On Your Site</h4>
+                    <p>Paste one iframe into your own website and your customers track their shipments
+                        without ever leaving it.</p>
+                    <div class="ls-code">
+                        <button type="button" class="ls-copy" data-copy-target="hpEmbedCode" aria-label="Copy embed code" fdprocessedid="xsjcl8">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                        <code id="hpEmbedCode">&lt;iframe src="https://couriersewa.com/tracking/widget"
+  width="100%" height="620"
+  style="border:0"&gt;&lt;/iframe&gt;</code>
+                    </div>
+                    <div class="ls-tool-foot">
+                        <a href="../pages/widget.html" target="_blank" rel="noopener" class="ls-link">
+                            Preview the widget <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="ls-section ls-light" id="pricing">
+        <div class="ls-shell">
+            <div class="ls-head-center reveal">
+                <span class="ls-eyebrow">Pricing</span>
+                <h2 class="ls-h2">Start Free. <span class="ls-grad-text">Scale When You Do.</span></h2>
+                <p class="ls-lede">Every plan includes the full module set — plans differ on volume and
+                    team size, not on features held back.</p>
+            </div>
+
+            <div class="ls-plans">
+                                                        <div class="ls-plan reveal">
+                                                <div class="ls-plan-name">Trial</div>
+                        <p class="ls-plan-desc">Free 15-day trial to explore all features.</p>
+                        <div class="ls-plan-price">
+                                                            <b>Free</b>
+                                <span>for 15 days</span>
+                                                    </div>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>
+                                                                    Admin account + 1 team login
+                                                            </li>
+                                                            <li><i class="fa-solid fa-check"></i>
+                                    Unlimited branches
+                                </li>
+                                                        <li><i class="fa-solid fa-check"></i>
+                                10 modules enabled
+                            </li>
+                                                            <li><i class="fa-solid fa-check"></i>All core features</li>
+                                                            <li><i class="fa-solid fa-check"></i>Email support</li>
+                                                            <li><i class="fa-solid fa-check"></i>Whatsapp support</li>
+                                                    </ul>
+                        <div class="ls-plan-cta">
+                            <a href="../pages/register.html" class="ls-btn ls-btn--line ls-btn--block">
+                                Start Free Trial
+                            </a>
+                        </div>
+                    </div>
+                                                        <div class="ls-plan ls-plan--featured reveal">
+                                                    <span class="ls-plan-flag">Most Popular</span>
+                                                <div class="ls-plan-name">1 Month : 1 Admin &amp; 1 user</div>
+                        <p class="ls-plan-desc">Perfect for growing courier businesses.</p>
+                        <div class="ls-plan-price">
+                                                            <b>₹1,000</b>
+                                <span>/ 1 month</span>
+                                                    </div>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>
+                                                                    Admin account + 1 team login
+                                                            </li>
+                                                            <li><i class="fa-solid fa-check"></i>
+                                    Unlimited branches
+                                </li>
+                                                        <li><i class="fa-solid fa-check"></i>
+                                10 modules enabled
+                            </li>
+                                                            <li><i class="fa-solid fa-check"></i>All core features</li>
+                                                            <li><i class="fa-solid fa-check"></i>Email support</li>
+                                                            <li><i class="fa-solid fa-check"></i>Whatsapp support</li>
+                                                    </ul>
+                        <div class="ls-plan-cta">
+                            <a href="../pages/register.html" class="ls-btn ls-btn--brand ls-btn--block">
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                                                        <div class="ls-plan ls-plan--featured reveal">
+                                                    <span class="ls-plan-flag">Most Popular</span>
+                                                <div class="ls-plan-name">Starter - 1 Admin &amp; 1 User</div>
+                        <p class="ls-plan-desc">Perfect for small courier businesses.</p>
+                        <div class="ls-plan-price">
+                                                            <b>₹5,000</b>
+                                <span>/ 1 year</span>
+                                                    </div>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>
+                                                                    Admin account + 1 team login
+                                                            </li>
+                                                            <li><i class="fa-solid fa-check"></i>
+                                    Unlimited branches
+                                </li>
+                                                        <li><i class="fa-solid fa-check"></i>
+                                10 modules enabled
+                            </li>
+                                                            <li><i class="fa-solid fa-check"></i>All core features</li>
+                                                            <li><i class="fa-solid fa-check"></i>Email support</li>
+                                                            <li><i class="fa-solid fa-check"></i>Whatsapp support</li>
+                                                    </ul>
+                        <div class="ls-plan-cta">
+                            <a href="../pages/register.html" class="ls-btn ls-btn--brand ls-btn--block">
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                
+                
+                <div class="ls-plan reveal">
+                    <div class="ls-plan-name">Enterprise</div>
+                    <p class="ls-plan-desc">For multi-branch networks and high daily volumes.</p>
+                    <div class="ls-plan-price">
+                        <b>Custom</b>
+                        <span>talk to us</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Unlimited team logins</li>
+                        <li><i class="fa-solid fa-check"></i>Multi-branch and multi-carrier setup</li>
+                        <li><i class="fa-solid fa-check"></i>Data migration and onboarding help</li>
+                        <li><i class="fa-solid fa-check"></i>Priority WhatsApp and phone support</li>
+                    </ul>
+                    <div class="ls-plan-cta">
+                        <a href="https://wa.me/919504864450" target="_blank" rel="noopener" class="ls-btn ls-btn--line ls-btn--block">
+                            <i class="fa-brands fa-whatsapp"></i> Request a Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="ls-section ls-dark" id="security">
+        <span class="ls-blob ls-blob--gold" style="width:420px;height:420px;top:-140px;right:-120px;"></span>
+        <div class="ls-shell" style="position:relative;z-index:1;">
+            <div class="ls-head-center reveal">
+                <span class="ls-eyebrow">Security &amp; Control</span>
+                <h2 class="ls-h2">Your Data Stays <span class="ls-grad-text">Yours.</span></h2>
+                <p class="ls-lede">Every company on the platform is walled off from every other one, and
+                    every login is accounted for.</p>
+            </div>
+
+            <div class="ls-sec-grid">
+                <div class="ls-sec reveal">
+                    <i class="fa-solid fa-building-lock"></i>
+                    <div>
+                        <b>Company-level isolation</b>
+                        <span>Bookings, clients, rates and invoices are scoped to your company. No other tenant can query them.</span>
+                    </div>
+                </div>
+                <div class="ls-sec reveal">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <div>
+                        <b>OTP-verified sign-up</b>
+                        <span>New accounts confirm their contact details before they reach the panel.</span>
+                    </div>
+                </div>
+                <div class="ls-sec reveal">
+                    <i class="fa-solid fa-user-lock"></i>
+                    <div>
+                        <b>One active device per user</b>
+                        <span>Shared passwords stop being invisible: a second login is flagged and the first session ends.</span>
+                    </div>
+                </div>
+                <div class="ls-sec reveal">
+                    <i class="fa-solid fa-sliders"></i>
+                    <div>
+                        <b>Granular permissions</b>
+                        <span>Access is granted per module and per action, and a plan can only expose what it includes.</span>
+                    </div>
+                </div>
+                <div class="ls-sec reveal">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <div>
+                        <b>Status history kept</b>
+                        <span>POD and delivery updates are appended, not overwritten, so you can see who changed what and when.</span>
+                    </div>
+                </div>
+                <div class="ls-sec reveal">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div>
+                        <b>Throttled public lookups</b>
+                        <span>Tracking is rate-limited so consignment numbers can't be scraped in bulk.</span>
+                    </div>
+                </div>
+                <div class="ls-sec reveal">
+                    <i class="fa-solid fa-user-check"></i>
+                    <div>
+                        <b>Approved before activation</b>
+                        <span>New company sign-ups sit in a pending state until a platform admin approves them.</span>
+                    </div>
+                </div>
+                <div class="ls-sec reveal">
+                    <i class="fa-solid fa-power-off"></i>
+                    <div>
+                        <b>Logins you can switch off</b>
+                        <span>Deactivate a staff account and it can't sign in again — and the seat it held is freed.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="ls-section ls-white" id="faq">
+        <div class="ls-shell">
+            <div class="ls-head-center reveal">
+                <span class="ls-eyebrow">FAQ</span>
+                <h2 class="ls-h2">Questions Worth <span class="ls-grad-text">Asking First.</span></h2>
+            </div>
+
+            
+            <div class="ls-faq" id="hpFaq">
+                                    <div class="ls-faq-item">
+                        <button class="ls-faq-q" type="button" aria-expanded="false" aria-controls="hpFaqA0" fdprocessedid="64x3hm">
+                            How long is the free trial, and what is left out of it?
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="ls-faq-a" id="hpFaqA0"><p>The trial runs for 30 days with every module switched on â€” bookings, POD, quotations, invoices, ledger, expenses, clients, receivers, complaints, enquiries and reports. Nothing is held back, so what you test is what you get.</p></div>
+                    </div>
+                                    <div class="ls-faq-item">
+                        <button class="ls-faq-q" type="button" aria-expanded="false" aria-controls="hpFaqA1" fdprocessedid="2protr">
+                            Can my customers track a shipment without an account?
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="ls-faq-a" id="hpFaqA1"><p>Yes. The tracking page is public and accepts either the AWB number or the barcode/CN number. You can also embed the same tracker in your own website with a single iframe â€” the snippet is in the Tools section above.</p></div>
+                    </div>
+                                    <div class="ls-faq-item">
+                        <button class="ls-faq-q" type="button" aria-expanded="false" aria-controls="hpFaqA2" fdprocessedid="pbpm0m">
+                            How is chargeable weight calculated?
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="ls-faq-a" id="hpFaqA2"><p>Volumetric weight is (L Ã— W Ã— H) divided by your carrier's divisor â€” commonly 5000, 4500 or 4000 â€” and the chargeable weight is whichever is higher, actual or volumetric. Bookings apply that automatically against the matching weight slab on the rate card.</p></div>
+                    </div>
+                                    <div class="ls-faq-item">
+                        <button class="ls-faq-q" type="button" aria-expanded="false" aria-controls="hpFaqA3" fdprocessedid="t6qs67">
+                            Does it handle multiple carriers, branches and rate cards?
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="ls-faq-a" id="hpFaqA3"><p>That is the normal setup. You define your carriers, centers and zones, then build a rate card per carrier, mode and weight slab. Rate cards can be cloned between carriers so a new partner takes minutes, not an afternoon.</p></div>
+                    </div>
+                                    <div class="ls-faq-item">
+                        <button class="ls-faq-q" type="button" aria-expanded="false" aria-controls="hpFaqA4" fdprocessedid="3g485i">
+                            Are the invoices GST-ready?
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="ls-faq-a" id="hpFaqA4"><p>Yes â€” invoices carry GST and TDS handling, charges can be flat or percentage-based, and there are three print formats to match how your clients expect to receive them. Payments are recorded against the invoice and flow into the client ledger.</p></div>
+                    </div>
+                                    <div class="ls-faq-item">
+                        <button class="ls-faq-q" type="button" aria-expanded="false" aria-controls="hpFaqA5" fdprocessedid="tv4tm8">
+                            What happens when I outgrow my plan mid-month?
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="ls-faq-a" id="hpFaqA5"><p>Buy an add-on instead of changing plan: extra bookings for the cycle, or extra team logins. Your Admin account never consumes a seat, so a plan with one team login means an Admin plus one staff member.</p></div>
+                    </div>
+                                    <div class="ls-faq-item">
+                        <button class="ls-faq-q" type="button" aria-expanded="false" aria-controls="hpFaqA6" fdprocessedid="a47iqr">
+                            Can the panel carry our own branding?
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="ls-faq-a" id="hpFaqA6"><p>Brand colours, corner radius, fonts and the hero image are configurable from the panel, and your company logo goes on every printed invoice and POD. The product logo and favicon themselves are set once for the whole ESE platform.</p></div>
+                    </div>
+                            </div>
+        </div>
+    </section>
+
+    
+    <section class="ls-section ls-section--tight ls-light">
+        <div class="ls-shell">
+            <div class="ls-cta-box reveal">
+                <h2>Ready to Streamline Your Logistics?</h2>
+                <p>Start on the free trial today — book a shipment, print a consignment note, raise an
+                    invoice, and see the whole trail in one place before you pay anything.</p>
+                <div class="ls-cta-actions">
+                    <a href="../pages/register.html" class="ls-btn ls-btn--gold">
+                        Start Free Trial <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="https://wa.me/919504864450" target="_blank" rel="noopener" class="ls-btn ls-btn--ghost">
+                        <i class="fa-brands fa-whatsapp"></i> Talk to Us
+                    </a>
+                </div>
+                <p class="ls-cta-note">No card required to start — 30 days, every module.</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+    <div class="ls-modal" id="volCalc" role="dialog" aria-modal="true" aria-labelledby="volCalcTitle">
+        <div class="ls-modal-box">
+            <div class="ls-modal-head">
+                <div>
+                    <h4 id="volCalcTitle"><i class="fa-solid fa-cube"></i> Volumetric Weight Calculator</h4>
+                    <p>Find the chargeable weight for your shipment</p>
+                </div>
+                <button type="button" class="ls-modal-close" data-modal-close="" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="ls-modal-body">
+                <span class="vc-label"><i class="fa-solid fa-ruler-combined"></i> Package Dimensions</span>
+                <div class="vc-row">
+                    <div>
+                        <label class="vc-label" for="vc_length">Length</label>
+                        <div class="vc-field">
+                            <input type="number" id="vc_length" placeholder="0" min="0" step="0.1" inputmode="decimal">
+                            <span class="vc-unit">cm</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="vc-label" for="vc_width">Width</label>
+                        <div class="vc-field">
+                            <input type="number" id="vc_width" placeholder="0" min="0" step="0.1" inputmode="decimal">
+                            <span class="vc-unit">cm</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="vc-label" for="vc_height">Height</label>
+                        <div class="vc-field">
+                            <input type="number" id="vc_height" placeholder="0" min="0" step="0.1" inputmode="decimal">
+                            <span class="vc-unit">cm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vc-sep">Actual Weight</div>
+
+                <div class="vc-row vc-row--2">
+                    <div>
+                        <label class="vc-label" for="vc_weight">Actual Weight</label>
+                        <div class="vc-field">
+                            <input type="number" id="vc_weight" placeholder="0.00" min="0" step="0.01" inputmode="decimal">
+                            <span class="vc-unit">KG</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="vc-label" for="vc_divisor_ac">Divisor</label>
+                        <div class="vc-field">
+                            <input type="text" id="vc_divisor_ac" class="custom-ac" data-ac-list="vc_divisor_list" autocomplete="off" value="5000 SFC" style="padding-right:12px;" data-ac-initialized="true" autocorrect="off" autocapitalize="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" data-lpignore="true" data-1p-ignore="true" data-form-type="other" readonly="readonly">
+                            <input type="hidden" id="vc_divisor" value="5000">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="ls-btn ls-btn--brand ls-btn--block" id="vcCalc" style="margin-top:20px;">
+                    <i class="fa-solid fa-calculator"></i> Calculate Chargeable Weight
+                </button>
+
+                <div class="vc-result" id="vcResult">
+                    <div class="vc-line">
+                        <span><i class="fa-solid fa-cube"></i> Volumetric Weight</span>
+                        <b id="vcVol">0 kg</b>
+                    </div>
+                    <div class="vc-line">
+                        <span><i class="fa-solid fa-weight-hanging"></i> Actual Weight</span>
+                        <b id="vcAct">0 kg</b>
+                    </div>
+                    <div class="vc-line is-final">
+                        <span><i class="fa-solid fa-circle-check"></i> Chargeable Weight</span>
+                        <b id="vcChg">0 kg</b>
+                    </div>
+                    <p class="vc-note">
+                        Formula: (L × W × H) ÷ <span id="vcDivNote">5000</span>
+                        &#160;|&#160; Chargeable = higher of actual and volumetric
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        window.acDataLists = Object.assign(window.acDataLists || {}, {
+            vc_divisor_list: [
+                { label: '5000 SFC',        id: '5000' },
+                { label: '4500 APEX',       id: '4500' },
+                { label: '4000 DHL/FEDEX',  id: '4000' },
+            ],
+        });
+    </script>
+    <script>
+    /**
+     * Reusable Custom Autocomplete Logic
+     * To use: Add class 'custom-ac' and 'data-ac-list' attribute to input.
+     * data-ac-list should match a key in the window.acDataLists object.
+     */
+    (function() {
+        let dropdown = null;
+        let currentFocus = -1;
+        let activeInput = null;
+
+        function createDropdown() {
+            if (document.getElementById('custom-ac-dropdown-container')) {
+                dropdown = document.getElementById('custom-ac-dropdown-container');
+                return;
+            }
+            dropdown = document.createElement('div');
+            dropdown.id = 'custom-ac-dropdown-container';
+            dropdown.style.cssText = 'position: absolute; z-index: 999; max-height: 250px; overflow-y: auto; background: #fff; border: 1px solid #ced4da; border-radius: 6px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); display: none; padding: 0.25rem 0; margin-top: 4px; list-style: none; min-width: 200px;';
+            document.body.appendChild(dropdown);
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                if (activeInput && e.target !== activeInput && !dropdown.contains(e.target)) {
+                    closeDropdown();
+                }
+            });
+
+            // Close dropdown when any Bootstrap modal is closing
+            document.addEventListener('hide.bs.modal', function() {
+                closeDropdown();
+            });
+
+            // Close dropdown when scrolling outside the dropdown (prevents popup from overflowing sticky header)
+            window.addEventListener('scroll', function(e) {
+                if (dropdown && dropdown.style.display !== 'none') {
+                    if (e.target && (e.target === dropdown || dropdown.contains(e.target))) {
+                        return;
+                    }
+                    closeDropdown();
+                }
+            }, { passive: true, capture: true });
+
+            // Close dropdown on window resize
+            window.addEventListener('resize', function() {
+                if (dropdown && dropdown.style.display !== 'none') {
+                    closeDropdown();
+                }
+            }, { passive: true });
+        }
+
+        function closeDropdown() {
+            if (dropdown) {
+                dropdown.style.display = 'none';
+                dropdown.classList.remove('in-modal');
+            }
+            currentFocus = -1;
+        }
+
+        function debounce(fn, wait) {
+            let t;
+            return function() {
+                const ctx = this, args = arguments;
+                clearTimeout(t);
+                t = setTimeout(function() { fn.apply(ctx, args); }, wait);
+            };
+        }
+
+        function buildQuery(params) {
+            const usp = new URLSearchParams();
+            Object.keys(params || {}).forEach(function(k) {
+                const v = params[k];
+                if (Array.isArray(v)) {
+                    v.forEach(function(item) { usp.append(k + '[]', item); });
+                } else if (v !== undefined && v !== null && v !== '') {
+                    usp.append(k, v);
+                }
+            });
+            return usp.toString();
+        }
+
+        // Fetch options from a server endpoint (data-ac-url). Optional extra query
+        // params come from the function named in data-ac-params.
+        function fetchRemote(input, termOverride) {
+            const url = input.getAttribute('data-ac-url');
+            if (!url) return;
+            const term = termOverride !== undefined ? termOverride : (input.value || '');
+            let extra = {};
+            const fnName = input.getAttribute('data-ac-params');
+            if (fnName && typeof window[fnName] === 'function') {
+                try { extra = window[fnName](input) || {}; } catch (e) { extra = {}; }
+            }
+            const qs = buildQuery(Object.assign({ q: term }, extra));
+            // data-ac-method="post": params go in the body (long id lists overflow a URL).
+            const post = (input.getAttribute('data-ac-method') || '').toLowerCase() === 'post';
+            const token = (document.querySelector('meta[name="csrf-token"]') || {}).content || '';
+            fetch(post ? url : url + (url.indexOf('?') > -1 ? '&' : '?') + qs, post ? {
+                method: 'POST',
+                body: qs,
+                headers: { 'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json',
+                    'Content-Type': 'application/x-www-form-urlencoded', 'X-CSRF-TOKEN': token }
+            } : {
+                headers: { 'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json' }
+            })
+            .then(function(r) { return r.ok ? r.json() : []; })
+            .then(function(list) {
+                if (document.activeElement === input) renderList(input, list, term, true);
+            })
+            .catch(function() {});
+        }
+
+        function renderList(input, itemsArray, filterText, skipFilter) {
+            if (!dropdown) createDropdown();
+            dropdown.innerHTML = '';
+            currentFocus = -1;
+            activeInput = input;
+            
+            let count = 0;
+            
+            // Convert to array if it's an object
+            if (itemsArray && typeof itemsArray === 'object' && !Array.isArray(itemsArray)) {
+                itemsArray = Object.values(itemsArray);
+            }
+            
+            if (!itemsArray || !itemsArray.length) {
+                closeDropdown();
+                return;
+            }
+
+            const maxItems = 100;
+            const filter = (filterText || "").toLowerCase().trim();
+
+            for (let i = 0; i < itemsArray.length; i++) {
+                let item = itemsArray[i];
+                if (!item) continue;
+
+                // 'text' is in the chain because Select2-shaped endpoints ({id, text})
+                // otherwise render as blank rows with no error of any kind.
+                let itemLabel = typeof item === 'object' ? (item.label || item.value || item.name || item.text || "") : (item || "");
+                itemLabel = String(itemLabel);
+                
+                // If filter is present, check for match. If no filter (or remote
+                // results the server already filtered), show all.
+                if (skipFilter || !filter || itemLabel.toLowerCase().indexOf(filter) > -1) {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.className = 'custom-ac-item';
+                    itemDiv.style.cssText = 'padding: 0.7rem 1rem; cursor: pointer; color: #1f2937; border-bottom: 1px solid #f3f4f6; font-size: 0.9rem; transition: all 0.1s ease;';
+                    itemDiv.setAttribute('data-index', count);
+                    itemDiv._acItem = item; // keep the original item for keyboard selection
+
+                    itemDiv.onmouseover = function() {
+                        currentFocus = parseInt(this.getAttribute('data-index'));
+                        highlightActive(dropdown.querySelectorAll('.custom-ac-item'));
+                    };
+
+                    const matchIndex = filter ? itemLabel.toLowerCase().indexOf(filter) : -1;
+                    const labelLine = document.createElement('div');
+                    if (matchIndex > -1) {
+                        labelLine.appendChild(document.createTextNode(itemLabel.substring(0, matchIndex)));
+                        const strong = document.createElement('strong');
+                        strong.style.color = 'var(--theme-primary, #F5C518)';
+                        strong.textContent = itemLabel.substring(matchIndex, matchIndex + filter.length);
+                        labelLine.appendChild(strong);
+                        labelLine.appendChild(document.createTextNode(itemLabel.substring(matchIndex + filter.length)));
+                    } else {
+                        labelLine.textContent = itemLabel;
+                    }
+                    itemDiv.innerHTML = '';
+                    itemDiv.appendChild(labelLine);
+
+                    // Disambiguate same-named entries (e.g. two cities with the same
+                    // name in different states) by showing the state as a muted hint.
+                    const stateHint = (typeof item === 'object' && item.state) ? String(item.state) : '';
+                    if (stateHint) {
+                        const stateLine = document.createElement('div');
+                        stateLine.style.cssText = 'font-size: 0.75rem; color: #6b7280; margin-top: 2px;';
+                        stateLine.textContent = stateHint;
+                        itemDiv.appendChild(stateLine);
+                    }
+
+                    itemDiv.addEventListener('mousedown', function(e) {
+                        e.preventDefault(); 
+                        selectOption(input, item);
+                    });
+
+                    dropdown.appendChild(itemDiv);
+                    count++;
+                    if (count >= maxItems) break;
+                }
+            }
+            
+            if (count > 0) {
+                const rect = input.getBoundingClientRect();
+                const inModal = input.closest('.modal');
+                const headerEl = document.querySelector('.page-header');
+                const headerBottom = (!inModal && headerEl) ? headerEl.getBoundingClientRect().bottom : 0;
+
+                // If input is outside the visible viewport or scrolled under page-header, close
+                if ((!inModal && rect.bottom <= headerBottom) || rect.bottom <= 0 || rect.top >= window.innerHeight) {
+                    closeDropdown();
+                    return;
+                }
+
+                if (inModal) {
+                    dropdown.classList.add('in-modal');
+                    dropdown.style.setProperty('z-index', '1075', 'important');
+                    dropdown.style.position = 'fixed';
+                    dropdown.style.top = (rect.bottom + 4) + 'px';
+                    dropdown.style.left = rect.left + 'px';
+                    dropdown.style.width = rect.width + 'px';
+                } else {
+                    dropdown.classList.remove('in-modal');
+                    dropdown.style.setProperty('z-index', '999', 'important');
+                    dropdown.style.position = 'absolute';
+                    dropdown.style.top = (rect.bottom + window.scrollY + 4) + 'px';
+                    dropdown.style.left = (rect.left + window.scrollX) + 'px';
+                    dropdown.style.width = rect.width + 'px';
+                }
+
+                // Adjust max-height if near viewport bottom
+                const spaceBelow = window.innerHeight - rect.bottom - 16;
+                if (spaceBelow < 250) {
+                    dropdown.style.maxHeight = Math.max(120, spaceBelow) + 'px';
+                } else {
+                    dropdown.style.maxHeight = '250px';
+                }
+
+                dropdown.style.display = 'block';
+            } else {
+                closeDropdown();
+            }
+        }
+
+        function highlightActive(items) {
+            if (!items) return;
+            for (let i = 0; i < items.length; i++) {
+                if (i === currentFocus) {
+                    items[i].classList.add('active');
+                    items[i].style.backgroundColor = 'var(--theme-primary-light, rgba(0, 102, 102, 0.12))';
+                    items[i].style.color = 'var(--theme-primary, #F5C518)';
+                    items[i].style.fontWeight = '600';
+                    items[i].scrollIntoView({ block: 'nearest' });
+                } else {
+                    items[i].classList.remove('active');
+                    items[i].style.backgroundColor = '';
+                    items[i].style.color = '#1f2937';
+                    items[i].style.fontWeight = '400';
+                }
+            }
+        }
+
+        function selectOption(input, item) {
+            let label = typeof item === 'object' ? (item.label || item.value || item.name || item.text) : item;
+            let id = typeof item === 'object' ? (item.id || item.dataId) : item;
+            
+            input.value = label;
+            closeDropdown();
+
+            // Sync paired hidden field if exists (e.g. sender/receiver search)
+            if (input.id === 'receiver_search_input') {
+                const hiddenRecv = document.getElementById('receiver_name_search_hidden');
+                if (hiddenRecv) hiddenRecv.value = label;
+            } else if (input.id === 'sender_search_input') {
+                const hiddenSend = document.getElementById('sender_name_search_hidden');
+                if (hiddenSend) hiddenSend.value = label;
+            }
+
+            // Trigger standard jQuery events if available
+            if (window.jQuery) {
+                $(input).trigger('input').trigger('change');
+            } else {
+                input.dispatchEvent(new Event('input', { bubbles: true }));
+                input.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+
+            // Dispatch custom event
+            const event = new CustomEvent('ac-select', {
+                detail: { item: item, label: label, id: id },
+                bubbles: true
+            });
+            input.dispatchEvent(event);
+
+            if (typeof window.onACSelect === 'function') {
+                window.onACSelect(input, item);
+            }
+        }
+
+        function initCustomAutocomplete() {
+            const inputs = document.querySelectorAll('.custom-ac:not([data-ac-initialized])');
+            if (inputs.length === 0) return;
+
+            inputs.forEach(input => {
+                input.setAttribute('data-ac-initialized', 'true');
+                input.setAttribute('autocomplete', 'off');
+                input.setAttribute('autocorrect', 'off');
+                input.setAttribute('autocapitalize', 'off');
+                input.setAttribute('spellcheck', 'false');
+                input.setAttribute('role', 'combobox');
+                input.setAttribute('aria-autocomplete', 'list');
+                input.setAttribute('aria-expanded', 'false');
+                input.setAttribute('data-lpignore', 'true');
+                input.setAttribute('data-1p-ignore', 'true');
+                input.setAttribute('data-form-type', 'other');
+
+                // Suppress browser address/contact autofill popup:
+                // Start input readonly so Chrome skips address/profile autofill on focus.
+                input.readOnly = true;
+                input.setAttribute('readonly', 'readonly');
+
+                input.addEventListener('focus', function () {
+                    // Unlock typing after focus has settled so Chrome does not trigger autofill popup
+                    setTimeout(function () {
+                        input.readOnly = false;
+                        input.removeAttribute('readonly');
+                    }, 50);
+                });
+
+                input.addEventListener('blur', function () {
+                    input.readOnly = true;
+                    input.setAttribute('readonly', 'readonly');
+                });
+                
+                const isRemote = input.hasAttribute('data-ac-url');
+                const debouncedFetch = isRemote ? debounce(function() { fetchRemote(input); }, 250) : null;
+
+                const getList = () => {
+                    const key = input.getAttribute('data-ac-list') || input.getAttribute('data-list-key');
+                    if (key && window.acDataLists && window.acDataLists[key]) return window.acDataLists[key];
+                    if (key && typeof window[key] === 'function') return window[key]();
+                    if (key && window[key]) return window[key];
+                    return [];
+                };
+
+                // Open the dropdown (remote = fetch from server, local = filter array).
+                // Always shows the full unfiltered list here, even when the input
+                // already has a value — filtering-by-current-value only happens
+                // once the user actually types (see the 'input' listener below).
+                const show = function() {
+                    if (isRemote) fetchRemote(input, '');
+                    else renderList(input, getList(), '');
+                };
+
+                // Show on focus - but only for a genuine user-initiated focus.
+                // A programmatic el.focus() (e.g. save-validation jumping to an
+                // invalid field) also fires a 'focus' event; without this guard
+                // that reopens the dropdown with no visible connection to what
+                // the user actually clicked, which read as "it opens on its own".
+                input.addEventListener('focus', function(e) { if (e.isTrusted) show(); });
+
+                // Show on click (even if already focused)
+                input.addEventListener('click', function(e) { if (e.isTrusted) show(); });
+
+                // Close when focus leaves the input (e.g. Tab to the next
+                // field). Option selection uses mousedown+preventDefault,
+                // which keeps the input focused, so this never fires
+                // mid-selection.
+                input.addEventListener('blur', function() {
+                    if (activeInput === input) closeDropdown();
+                });
+
+                // Filter on input
+                input.addEventListener('input', function() {
+                    if (input.id === 'receiver_search_input') {
+                        const hiddenRecv = document.getElementById('receiver_name_search_hidden');
+                        if (hiddenRecv) hiddenRecv.value = this.value;
+                    } else if (input.id === 'sender_search_input') {
+                        const hiddenSend = document.getElementById('sender_name_search_hidden');
+                        if (hiddenSend) hiddenSend.value = this.value;
+                    }
+                    if (isRemote) debouncedFetch();
+                    else renderList(this, getList(), this.value);
+                });
+
+                // Keyboard navigation
+                input.addEventListener('keydown', function(e) {
+                    const items = dropdown ? dropdown.querySelectorAll('.custom-ac-item') : [];
+                    
+                    if (dropdown && dropdown.style.display === 'block') {
+                        if (e.keyCode === 40) { // Down
+                            e.preventDefault();
+                            currentFocus++;
+                            if (currentFocus >= items.length) currentFocus = 0;
+                            highlightActive(items);
+                        } else if (e.keyCode === 38) { // Up
+                            e.preventDefault();
+                            currentFocus--;
+                            if (currentFocus < 0) currentFocus = items.length - 1;
+                            highlightActive(items);
+                        } else if (e.keyCode === 13) { // Enter
+                            e.preventDefault();
+                            if (currentFocus > -1 && items[currentFocus]) {
+                                // Prefer the original item stashed on the element
+                                // (works for both remote and local sources).
+                                const stored = items[currentFocus]._acItem;
+                                if (stored !== undefined) {
+                                    selectOption(this, stored);
+                                } else {
+                                    const list = getList();
+                                    const label = items[currentFocus].innerText;
+                                    const selectedItem = Array.isArray(list) ? list.find(it => {
+                                        const itLabel = typeof it === 'object' ? (it.label || it.value || it.name) : it;
+                                        return String(itLabel) === label;
+                                    }) : label;
+                                    selectOption(this, selectedItem || label);
+                                }
+                            }
+                        } else if (e.keyCode === 27) { // Escape
+                            closeDropdown();
+                        }
+                    } else if (e.keyCode === 40) { // Down arrow when closed
+                        show();
+                    }
+                });
+            });
+        }
+
+        // Export to window
+        window.initCustomAutocomplete = initCustomAutocomplete;
+
+        // Auto-init
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initCustomAutocomplete);
+        } else {
+            initCustomAutocomplete();
+        }
+
+        // MutationObserver for AJAX content
+        const observer = new MutationObserver((mutations) => {
+            let hasNewAC = false;
+            mutations.forEach(m => {
+                m.addedNodes.forEach(node => {
+                    if (node.nodeType === 1 && (node.classList?.contains('custom-ac') || node.querySelector?.('.custom-ac'))) {
+                        hasNewAC = true;
+                    }
+                });
+            });
+            if (hasNewAC) initCustomAutocomplete();
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+    })();
+
+    /**
+     * Filter-dropdown helper: pairs a `.custom-ac` text input with a hidden
+     * input that carries the actual filter value (id/enum string), so a
+     * filter panel can swap a plain <select> for the same searchable
+     * autocomplete used elsewhere in the app without changing how the rest
+     * of the page reads the filter (it still just reads $('#hiddenId').val()).
+     * Selecting an option, or clearing the text box by hand, updates the
+     * hidden input and fires a jQuery 'change' on it so any existing
+     * .on('change', ...) auto-reload handler keeps working unmodified.
+     */
+    window.bindFilterAc = function (inputId, hiddenId) {
+        var input = document.getElementById(inputId);
+        var hidden = document.getElementById(hiddenId);
+        if (!input || !hidden) return;
+
+        input.addEventListener('ac-select', function (e) {
+            hidden.value = (e.detail.id !== undefined && e.detail.id !== null) ? e.detail.id : e.detail.label;
+            if (window.jQuery) $(hidden).trigger('change'); else hidden.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+
+        input.addEventListener('input', function () {
+            if (input.value.trim() === '') {
+                hidden.value = '';
+                if (window.jQuery) $(hidden).trigger('change'); else hidden.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+        });
+    };
+
+    /** Clears both halves of a bindFilterAc() pair (used by filter "Clear" buttons). */
+    window.clearFilterAc = function (inputId, hiddenId) {
+        var input = document.getElementById(inputId);
+        var hidden = document.getElementById(hiddenId);
+        if (input) input.value = '';
+        if (hidden) hidden.value = '';
+    };
+
+    /**
+     * Generalized "must pick a real item" wiring for a required/optional
+     * custom-ac field, replacing the field's native <select> equivalent.
+     * Unlike bindFilterAc (which stays tolerant of free/empty text — correct
+     * for optional GET filters), this blocks form submission when the final
+     * text isn't a real list entry.
+     *
+     * @param inputId  id of the .custom-ac text input
+     * @param hiddenId id of a hidden input carrying the real id/value, or
+     *                 null when the visible input itself carries name= and
+     *                 the label IS the stored value (e.g. an enum field)
+     * @param opts.required boolean, default true
+     * @param opts.listKey  the data-ac-list key, used to validate text that
+     *                      matches a real label without an ac-select firing
+     *                      (e.g. a value prefilled on an edit form)
+     * @param opts.message  toast text shown when submission is blocked
+     */
+    window.bindAcHidden = function (inputId, hiddenId, opts) {
+        opts = opts || {};
+        var required = opts.required !== false;
+        var listKey  = opts.listKey;
+        var message  = opts.message || 'Please select a valid value from the list.';
+        var input  = document.getElementById(inputId);
+        var hidden = hiddenId ? document.getElementById(hiddenId) : null;
+        if (!input) return;
+
+        function resolveList() {
+            if (!listKey) return [];
+            return (window.acDataLists && window.acDataLists[listKey]) || [];
+        }
+        function labelOf(item) {
+            return typeof item === 'object' ? (item.label || item.value || item.name || '') : item;
+        }
+        function isValidTyped(val) {
+            var list = resolveList();
+            return Array.isArray(list) && list.some(function (it) { return String(labelOf(it)) === String(val); });
+        }
+
+        input.addEventListener('ac-select', function (e) {
+            if (hidden) hidden.value = (e.detail.id !== undefined && e.detail.id !== null) ? e.detail.id : e.detail.label;
+            input.dataset.acValid = '1';
+        });
+        input.addEventListener('input', function () {
+            if (hidden) hidden.value = '';
+            input.dataset.acValid = '0';
+        });
+        // Prefilled-on-load (edit forms): trust it only if it matches the list.
+        if (input.value && listKey && isValidTyped(input.value)) input.dataset.acValid = '1';
+
+        if (!required) return;
+        var form = input.closest('form');
+        if (!form) return;
+        form.addEventListener('submit', function (e) {
+            if (e.defaultPrevented) return; // another invalid field already blocked + toasted
+            var ok = hidden ? !!hidden.value : (input.dataset.acValid === '1' || isValidTyped(input.value));
+            if (!ok) {
+                e.preventDefault();
+                // Never falls through to the browser's alert(): Swal is always
+                // defined (locally served, plus the styled fallback shim).
+                if (window.showToast) window.showToast(message, 'error');
+                else Swal.fire({ title: 'Error', text: message, icon: 'error' });
+                input.focus();
+            }
+        });
+    };
+
+    /**
+     * Linked State / City / Pincode of one address (the same behaviour on every form):
+     *  - State picked  → the City and Pincode lists show only that state's; a City or
+     *                    Pincode from another state is cleared.
+     *  - City picked   → State fills in; the Pincode list shows that city's; a Pincode
+     *                    of another city is cleared.
+     *  - Pincode picked, or 6 digits typed → City and State fill in.
+     *  - Only values defined in Config (States / Cities / Pincodes): a typed value is
+     *    matched on blur (exact name, any case) and corrected to the defined spelling;
+     *    one that matches nothing is marked and blocks the form's submit with a toast.
+     *    Values set by page code (edit pre-fill, client auto-fill) are left alone —
+     *    the server rule (App\Rules\ValidCityStatePincode) checks every save anyway.
+     * Fields it fills fire jQuery 'input' + 'change', so page listeners (GST state,
+     * route sync, previews) keep working.
+     *
+     * bindLocationSet({ state: '#x_state', city: '#x_city', pincode: '#x_pincode', label: 'Sender' })
+     * (pincode optional; ids or elements). The inputs need class "custom-ac".
+     */
+    window.bindLocationSet = function (opts) {
+        var $ = window.jQuery;
+        if (!$ || !opts) return;
+        var stateEl = $(opts.state)[0], cityEl = $(opts.city)[0], pinEl = opts.pincode ? $(opts.pincode)[0] : null;
+        if (!stateEl || !cityEl || cityEl.__locBound) return;
+        cityEl.__locBound = true;
+
+        var URL = {
+            states:   "https:\/\/couriersewa.com\/lookups\/states",
+            cities:   "https:\/\/couriersewa.com\/lookups\/cities",
+            pincodes: "https:\/\/couriersewa.com\/lookups\/pincodes",
+            pincode:  "https:\/\/couriersewa.com\/lookups\/pincode",
+        };
+        var who = opts.label ? opts.label + ' ' : '';
+        var fields = [stateEl, cityEl, pinEl].filter(Boolean);
+        var val = function (el) { return el ? String(el.value || '').trim() : ''; };
+        var ok = function (el) { return el && el.dataset.locValid !== '0'; };
+        var same = function (a, b) { return String(a || '').toLowerCase() === String(b || '').toLowerCase(); };
+        var getJSON = function (url, params) {
+            return fetch(url + (url.indexOf('?') > -1 ? '&' : '?') + new URLSearchParams(params), {
+                headers: { 'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json' }
+            }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
+        };
+        var exact = function (list, v) {
+            return (Array.isArray(list) ? list : []).find(function (it) { return same(it && it.label, v); }) || null;
+        };
+
+        // Lists follow the other fields (params read at fetch time).
+        var n = (window.__locSetN = (window.__locSetN || 0) + 1);
+        window['__locCityParams' + n] = function () {
+            return ok(stateEl) && val(stateEl) ? { state: val(stateEl) } : {};
+        };
+        window['__locPinParams' + n] = function () {
+            if (ok(cityEl) && val(cityEl)) return { city: val(cityEl), state: ok(stateEl) ? val(stateEl) : '' };
+            return ok(stateEl) && val(stateEl) ? { state: val(stateEl) } : {};
+        };
+        cityEl.setAttribute('data-ac-url', URL.cities);
+        cityEl.setAttribute('data-ac-params', '__locCityParams' + n);
+        if (pinEl) {
+            pinEl.setAttribute('data-ac-url', URL.pincodes);
+            pinEl.setAttribute('data-ac-params', '__locPinParams' + n);
+        }
+
+        // What a field's current text is known to belong to (kept with the text it was
+        // learnt for, so a value later set by page code is never judged by stale data).
+        var know = function (el, key, v) { el.dataset['loc' + key] = v || ''; el.dataset['loc' + key + 'For'] = el.value; };
+        var known = function (el, key) { return el && el.dataset['loc' + key + 'For'] === el.value ? (el.dataset['loc' + key] || '') : ''; };
+
+        function mark(el, good) {
+            el.dataset.locValid = good ? '1' : '0';
+            el.classList.toggle('is-invalid', !good);
+            if (good) el.dataset.locTyped = '';
+        }
+        // Set a field from a link (not typed): valid, and tell the page it changed.
+        function setVal(el, v) {
+            if (!el) return;
+            v = v || '';
+            mark(el, true);
+            if (el.value === v) return;
+            el.value = v;
+            // jQuery 'input' (page handlers, without re-opening this field's suggestions)
+            // + a native 'change' (seen by jQuery and plain listeners, e.g. live previews).
+            $(el).trigger('input');
+            el.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+
+        function onCity(name, stateName) {
+            know(cityEl, 'State', stateName);
+            if (stateName) { setVal(stateEl, stateName); }
+            if (pinEl && val(pinEl) && !same(known(pinEl, 'City'), name)) setVal(pinEl, '');
+        }
+        function onPincode(item) {
+            if (item.city) { setVal(cityEl, item.city); know(cityEl, 'State', item.state); }
+            if (item.state) setVal(stateEl, item.state);
+            know(pinEl, 'City', item.city);
+            know(pinEl, 'State', item.state);
+        }
+        // A new state keeps City / Pincode only when they lie in it.
+        function onState(stateName) {
+            if (val(cityEl)) {
+                var cs = known(cityEl, 'State');
+                if (cs) { if (!same(cs, stateName)) { setVal(cityEl, ''); if (pinEl) setVal(pinEl, ''); } }
+                else {
+                    var cityNow = cityEl.value;
+                    getJSON(URL.cities, { q: val(cityEl), state: stateName }).then(function (list) {
+                        if (cityEl.value !== cityNow) return;
+                        if (exact(list, val(cityEl))) know(cityEl, 'State', stateName);
+                        else { setVal(cityEl, ''); if (pinEl) setVal(pinEl, ''); }
+                    });
+                }
+                return;
+            }
+            if (pinEl && val(pinEl)) {
+                var ps = known(pinEl, 'State');
+                if (ps) { if (!same(ps, stateName)) setVal(pinEl, ''); }
+                else {
+                    var pinNow = pinEl.value;
+                    getJSON(URL.pincode, { code: val(pinEl) }).then(function (p) {
+                        if (pinEl.value === pinNow && !(p && same(p.state, stateName))) setVal(pinEl, '');
+                    });
+                }
+            }
+        }
+
+        // Typed text: match it to a defined value (exact, any case), else mark it.
+        function resolve(el) {
+            var v = val(el);
+            if (!v) { mark(el, true); return Promise.resolve(); }
+            var typed = el.value;
+            var p;
+            if (el === stateEl) {
+                p = getJSON(URL.states, { q: v }).then(function (list) {
+                    var hit = exact(list, v);
+                    if (el.value !== typed) return;
+                    if (!hit) return mark(el, false);
+                    setVal(el, hit.label); onState(hit.label);
+                });
+            } else if (el === cityEl) {
+                p = getJSON(URL.cities, { q: v }).then(function (list) {
+                    var hit = exact(list, v);
+                    if (el.value !== typed) return;
+                    if (!hit) return mark(el, false);
+                    setVal(el, hit.label); onCity(hit.label, hit.state);
+                });
+            } else {
+                p = getJSON(URL.pincode, { code: v }).then(function (hit) {
+                    if (el.value !== typed) return;
+                    if (!hit) return mark(el, false);
+                    mark(el, true); onPincode(hit);
+                });
+            }
+            el.__locPending = p.then(function () { el.__locPending = null; });
+            return el.__locPending;
+        }
+
+        fields.forEach(function (el) {
+            // Typing only: a trusted input event (page code's .trigger('input') has none).
+            $(el).on('input', function (e) {
+                if (!e.originalEvent || !e.originalEvent.isTrusted) return;
+                el.dataset.locValid = '0';
+                el.dataset.locTyped = el.value;
+                el.classList.remove('is-invalid');
+                if (el === cityEl && pinEl && val(pinEl)) setVal(pinEl, '');
+                if (el === pinEl && /^\d{6}$/.test(val(pinEl))) resolve(pinEl);
+            });
+            $(el).on('blur', function () {
+                if (el.dataset.locValid === '0' && el.dataset.locTyped === el.value && !el.__locPending) {
+                    // Let a click on a suggestion land first.
+                    setTimeout(function () { if (el.dataset.locValid === '0' && el.dataset.locTyped === el.value) resolve(el); }, 150);
+                }
+            });
+        });
+
+        stateEl.addEventListener('ac-select', function (e) { mark(stateEl, true); onState(e.detail.label); });
+        cityEl.addEventListener('ac-select', function (e) {
+            mark(cityEl, true);
+            onCity(e.detail.label, e.detail.item && e.detail.item.state);
+        });
+        if (pinEl) pinEl.addEventListener('ac-select', function (e) {
+            mark(pinEl, true);
+            if (e.detail.item && typeof e.detail.item === 'object') onPincode(e.detail.item);
+        });
+
+        // Submit: typed values that match nothing block the save (capture phase, so it
+        // runs before the page's own ajax submit handler). Still being matched → wait.
+        var form = cityEl.closest('form');
+        if (form) form.addEventListener('submit', function (e) {
+            var bad = fields.filter(function (el) {
+                return val(el) !== '' && el.dataset.locValid === '0' && el.dataset.locTyped === el.value;
+            });
+            if (!bad.length) return;
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            var submitter = e.submitter;
+            var waits = bad.map(function (el) { return el.__locPending || resolve(el); });
+            Promise.all(waits).then(function () {
+                var still = bad.filter(function (el) { return el.dataset.locValid === '0' && el.dataset.locTyped === el.value; });
+                if (!still.length) {
+                    if (form.requestSubmit) form.requestSubmit(submitter && submitter.form === form ? submitter : undefined);
+                    else form.submit();
+                    return;
+                }
+                var kind = still[0] === stateEl ? 'State' : (still[0] === cityEl ? 'City' : 'Pincode');
+                var msg = 'Please pick a valid ' + who + kind + ' from the list (Config → ' + (kind === 'City' ? 'Cities' : kind + 's') + ').';
+                if (window.showToast) window.showToast(msg, 'error'); else if (window.Swal) Swal.fire({ title: 'Error', text: msg, icon: 'error' });
+                still[0].focus();
+            });
+        }, true);
+    };
+
+    /** Forget typed / invalid marks on the location fields inside a form being refilled (e.g. a reused add/edit modal). */
+    window.resetLocationSet = function (container) {
+        var root = container && container.jquery ? container[0] : container;
+        if (!root) return;
+        root.querySelectorAll('[data-loc-valid]').forEach(function (el) {
+            el.dataset.locValid = '1';
+            el.dataset.locTyped = '';
+            el.classList.remove('is-invalid');
+        });
+    };
+</script>
+
+
+
+<script>
+    (function () {
+        'use strict';
+
+        var $  = function (sel, root) { return (root || document).querySelector(sel); };
+        var $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };
+        /* Nav, dropdown and back-to-top are handled by the shared layout's
+           platform.js; these shims keep the page-local helpers working. */
+        var navLinks = $('#lsNavLinks');
+        function closeMenu() { if (navLinks) { navLinks.classList.remove('is-open'); } }
+
+        /* --------------------------------------------------- smooth scroll */
+        $$('a[href^="#"]').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                var id = link.getAttribute('href');
+                if (id === '#' || id.length < 2) return;
+                var target = document.querySelector(id);
+                if (!target) return;
+                e.preventDefault();
+                closeMenu();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        /* ------------------------------------------- active section in nav */
+        var sections  = $$('section[id]');
+        var linkFor   = {};
+        $$('.ls-nav-link').forEach(function (a) {
+            var href = a.getAttribute('href') || '';
+            if (href.charAt(0) === '#') linkFor[href.slice(1)] = a;
+        });
+
+        if ('IntersectionObserver' in window) {
+            var spy = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    var a = linkFor[entry.target.id];
+                    if (!a) return;
+                    if (entry.isIntersecting) {
+                        $$('.ls-nav-link').forEach(function (x) { x.classList.remove('is-active'); });
+                        a.classList.add('is-active');
+                    }
+                });
+            }, { rootMargin: '-45% 0px -50% 0px' });
+            sections.forEach(function (s) { spy.observe(s); });
+
+            /* ----------------------------------------------- reveal on scroll */
+            var reveal = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry, i) {
+                    if (!entry.isIntersecting) return;
+                    var el = entry.target;
+                    setTimeout(function () { el.classList.add('is-visible'); }, Math.min(i, 6) * 70);
+                    reveal.unobserve(el);
+                });
+            }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+            $$('.reveal').forEach(function (el) { reveal.observe(el); });
+        } else {
+            $$('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
+        }
+
+        /* ----------------------------------------------------------- modal */
+        var lastFocus = null;
+
+        function openModal(id) {
+            var m = document.getElementById(id);
+            if (!m) return;
+            lastFocus = document.activeElement;
+            m.classList.add('is-open');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal(m) {
+            m.classList.remove('is-open');
+            document.body.style.overflow = '';
+            if (lastFocus) lastFocus.focus();
+        }
+
+        $$('[data-modal-open]').forEach(function (btn) {
+            btn.addEventListener('click', function () { openModal(btn.getAttribute('data-modal-open')); });
+        });
+        $$('.ls-modal').forEach(function (m) {
+            m.addEventListener('click', function (e) {
+                if (e.target === m || e.target.closest('[data-modal-close]')) closeModal(m);
+            });
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key !== 'Escape') return;
+            $$('.ls-modal.is-open').forEach(closeModal);
+        });
+
+        /* ------------------------------------------------------------- faq */
+        $$('.ls-faq-q').forEach(function (btn) {
+            var item = btn.parentElement;
+            var body = btn.nextElementSibling;
+            btn.addEventListener('click', function () {
+                var open = item.classList.contains('is-open');
+                // one panel at a time keeps the section from turning into a wall
+                $$('.ls-faq-item').forEach(function (other) {
+                    other.classList.remove('is-open');
+                    other.querySelector('.ls-faq-a').style.maxHeight = null;
+                    other.querySelector('.ls-faq-q').setAttribute('aria-expanded', 'false');
+                });
+                if (!open) {
+                    item.classList.add('is-open');
+                    body.style.maxHeight = body.scrollHeight + 'px';
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        /* ------------------------------------------------------ copy embed */
+        $$('[data-copy-target]').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var src = document.getElementById(btn.getAttribute('data-copy-target'));
+                if (!src) return;
+                var text = src.textContent;
+                var done = function () {
+                    btn.innerHTML = '<i class="fa-solid fa-check"></i>';
+                    setTimeout(function () { btn.innerHTML = '<i class="fa-regular fa-copy"></i>'; }, 1800);
+                };
+                if (navigator.clipboard && window.isSecureContext) {
+                    navigator.clipboard.writeText(text).then(done).catch(function () {});
+                    return;
+                }
+                // http:// installs don't get navigator.clipboard, so fall back to
+                // the old selection trick rather than silently doing nothing.
+                var ta = document.createElement('textarea');
+                ta.value = text;
+                ta.style.position = 'fixed';
+                ta.style.opacity = '0';
+                document.body.appendChild(ta);
+                ta.select();
+                try { document.execCommand('copy'); done(); } catch (err) {}
+                document.body.removeChild(ta);
+            });
+        });
+
+        /* ------------------------------------------- volumetric calculator */
+        var divisorAc = $('#vc_divisor_ac');
+        var divisorId = $('#vc_divisor');
+
+        divisorAc.addEventListener('ac-select', function (e) { divisorId.value = e.detail.id; });
+        divisorAc.addEventListener('input', function () { divisorId.value = ''; });
+
+        // Standalone page - no app helpers here, so keep a local copy of the
+        // "drop the .00 on whole numbers" rule.
+        function fmt(n) {
+            var v = Math.round((n || 0) * 100) / 100;
+            return v.toFixed(Math.round(Math.abs(v) * 100) % 100 === 0 ? 0 : 2);
+        }
+        function num(id) { return parseFloat(document.getElementById(id).value) || 0; }
+
+        $('#vcCalc').addEventListener('click', function () {
+            var divisor = parseInt(divisorId.value, 10) || 5000;
+            var vol = (num('vc_length') * num('vc_width') * num('vc_height')) / divisor;
+            var act = num('vc_weight');
+
+            $('#vcVol').textContent = fmt(vol) + ' kg';
+            $('#vcAct').textContent = fmt(act) + ' kg';
+            $('#vcChg').textContent = fmt(Math.max(vol, act)) + ' kg';
+            $('#vcDivNote').textContent = divisor;
+            $('#vcResult').classList.add('is-on');
+        });
+
+        // Reset the calculator each time the modal closes so the next visitor
+        // doesn't see the previous shipment's numbers.
+        var vcModal = $('#volCalc');
+        new MutationObserver(function () {
+            if (vcModal.classList.contains('is-open')) return;
+            ['vc_length', 'vc_width', 'vc_height', 'vc_weight'].forEach(function (id) {
+                document.getElementById(id).value = '';
+            });
+            $('#vcResult').classList.remove('is-on');
+        }).observe(vcModal, { attributes: true, attributeFilter: ['class'] });
+
+        /* ----------------------------------- keep the AWB box tidy on input */
+        var trackInput = $('.ls-track-form input[name="awb"]');
+        if (trackInput) {
+            trackInput.addEventListener('input', function () {
+                this.value = this.value.toUpperCase().replace(/\s+/g, '');
+            });
+        }
+    })();
+    </script>
+
+
+<footer class="ls-footer">
+    <div class="ls-shell">
+        <div class="ls-footer-grid">
+            <div>
+                <h6>Overview</h6>
+                <p>Courier Sewa — building reliable, scalable and beautifully
+                    crafted business software, and running our own company on it.</p>
+                                <div class="ls-social">
+                    <a href="https://wa.me/919504864450" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:mza9282@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+91 95048 64450" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h6>Products</h6>
+                <ul class="ls-footer-links">
+                                            <li><a href="products/ese-crm.html">ESE CRM</a></li>
+                                            <li><a href="products/courier-erp.html">Courier ERP</a></li>
+                                            <li><a href="products/digital-vcard.html">Digital VCard</a></li>
+                                            <li><a href="products/smart-sms.html">Smart SMS</a></li>
+                                            <li><a href="products/ese-store.html">ESE Store</a></li>
+                                    </ul>
+            </div>
+
+            <div>
+                <h6>Services</h6>
+                <ul class="ls-footer-links">
+                    <li><a href="services/custom-crm.html">Custom CRM</a></li>
+                    <li><a href="services/erp-development.html">ERP Development</a></li>
+                    <li><a href="services/e-commerce.html">E-commerce</a></li>
+                    <li><a href="services/mobile-apps.html">Mobile Apps</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h6>Contact Us</h6>
+                <ul class="ls-footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i><span>Patna, Bihar, Patna - , Bihar, INDIA</span></li>
+                    <li><i class="fa-solid fa-phone"></i><a href="tel:+91 95048 64450">+91 95048 64450</a></li>
+                    <li><i class="fa-solid fa-envelope"></i><a href="mailto:mza9282@gmail.com">mza9282@gmail.com</a></li>
+                    <li><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/919504864450" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="ls-footer-bottom">
+            <small>Courier Sewa © 2026. All rights reserved.</small>
+            <nav>
+                <a href="https://esecrm.com/#products">Products</a>
+                <a href="https://esecrm.com/#faq">FAQ</a>
+                <a href="https://esecrm.com/privacy-policy.html">Privacy Policy</a>
+                <a href="../pages/login.html">Login</a>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+
+<div class="ls-dock ls-dock--left">
+    <a class="is-call" href="tel:+91 95048 64450" aria-label="Call us" title="Call us"><i class="fa-solid fa-phone"></i></a>
+    <a class="is-wa" href="https://wa.me/919504864450" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+<div class="ls-dock">
+    <button class="is-top is-on" id="lsTop" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <button class="is-support" type="button" data-support-open="" aria-label="Support & complaints" title="Support & complaints" aria-controls="lsSupport" aria-expanded="false" fdprocessedid="adghrm"><i class="fa-solid fa-headset"></i></button>
+</div>
+
+
+<div class="ls-overlay" id="lsSupport" role="dialog" aria-modal="true" aria-labelledby="lsSupportTitle" hidden>
+    <div class="ls-overlay-box">
+        <button type="button" class="ls-overlay-close" data-support-close="" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        <div class="ls-console" id="support">
+            <div class="ls-console-bar">
+                <span class="ls-console-dot"></span>
+                <span class="ls-console-dot"></span>
+                <span class="ls-console-dot"></span>
+                <span class="ls-console-title" id="lsSupportTitle">Support &amp; Complaints</span>
+            </div>
+            <div class="ls-console-body">
+                
+                <form action="https://esecrm.com/enquiry-submit" method="POST">
+                    <input type="hidden" name="kind" value="support">
+                    <input type="hidden" name="return" value="https://couriersewa.com">
+                    <input type="text" name="website" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+
+                    <div class="ls-field">
+                        <input type="text" name="name" maxlength="255" required class="ls-input" placeholder="Your name" aria-label="Your name">
+                    </div>
+
+                    <div class="ls-field">
+                        <div class="ls-field-row">
+                            <div>
+                                <input type="email" name="email" maxlength="255" required class="ls-input" placeholder="Email address" aria-label="Email address">
+                            </div>
+                            <div>
+                                <input type="tel" name="phone" maxlength="32" class="ls-input" placeholder="Phone number" aria-label="Phone number">
+                            </div>
+                        </div>
+                    </div>
+
+                                            <input type="hidden" name="product" value="cep">
+                    
+                    <div class="ls-field">
+                        <input type="text" name="subject" maxlength="255" required class="ls-input" placeholder="Subject" aria-label="Subject">
+                    </div>
+
+                    <div class="ls-field">
+                        <textarea name="message" rows="4" maxlength="5000" required class="ls-textarea" placeholder="Describe the problem or your question" aria-label="Message"></textarea>
+                    </div>
+
+                    <button type="submit" class="ls-btn ls-btn--gold ls-btn--block">
+                        Submit Request <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                    <p class="ls-form-note">
+                        Urgent? <a href="https://wa.me/919504864450" target="_blank" rel="noopener">WhatsApp us</a> or call +91 95048 64450.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../scripts/platform.js" defer></script>
+<script>
+(function () {
+    var modal = document.getElementById('lsSupport');
+    if (!modal) { return; }
+    var openers = document.querySelectorAll('[data-support-open]');
+
+    function setOpen(open) {
+        modal.hidden = !open;
+        modal.classList.toggle('is-open', open);
+        document.body.classList.toggle('ls-overlay-open', open);
+        openers.forEach(function (b) { b.setAttribute('aria-expanded', open ? 'true' : 'false'); });
+        if (open) {
+            var first = modal.querySelector('input[name="name"]');
+            if (first) { first.focus(); }
+        }
+    }
+
+    openers.forEach(function (b) { b.addEventListener('click', function () { setOpen(true); }); });
+    modal.querySelectorAll('[data-support-close]').forEach(function (b) { b.addEventListener('click', function () { setOpen(false); }); });
+    modal.addEventListener('click', function (e) { if (e.target === modal) { setOpen(false); } });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.hidden) { setOpen(false); } });
+
+    // Re-opened by the server after a submit (?support=sent|invalid|failed).
+    if (modal.classList.contains('is-open')) { setOpen(true); }
+}());
+</script>
+
+
+<span id="PING_CONTENT_PUSH_NOTIFICATION" style="display: none;"></span><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>

@@ -1,0 +1,74 @@
+/* Courier Sewa dashboard theme — aligned with the public homepage palette */
+:root {
+  --theme-deafult: #006666;
+  --theme-primary: #006666;
+  --theme-primary-dark: #004d4d;
+  --theme-primary-light: rgba(0, 102, 102, .12);
+  --theme-primary-soft: rgba(0, 102, 102, .05);
+  --theme-secondary: #0d9488;
+  --cs-ink: #06201f;
+  --cs-deep: #00302f;
+  --cs-accent: #006666;
+  --cs-accent-2: #0d9488;
+  --cs-gold: #fdf503;
+}
+
+/* Theme all common dashboard actions and active navigation states. */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.bg-primary,
+.badge-primary,
+.label-primary,
+.sidebar-wrapper .sidebar-main .sidebar-links li a.active,
+.sidebar-wrapper .sidebar-main .sidebar-links li a:hover,
+.page-wrapper .page-header .header-wrapper .nav-right .profile-dropdown li:hover,
+.pagination .page-item.active .page-link {
+  background-color: var(--cs-accent) !important;
+  border-color: var(--cs-accent) !important;
+  color: #fff !important;
+}
+.btn-outline-primary,
+.btn-outline-primary:hover,
+.txt-primary,
+.font-primary,
+.sidebar-wrapper .sidebar-main .sidebar-links li a.active svg,
+.sidebar-wrapper .sidebar-main .sidebar-links li a:hover svg {
+  color: var(--cs-accent) !important;
+  border-color: var(--cs-accent) !important;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:focus { background-image: linear-gradient(135deg, #006666, #0d9488) !important; }
+.page-wrapper .page-header { border-bottom-color: #e2ecec; }
+.page-wrapper .page-header .header-wrapper { background: #fff; }
+.page-wrapper .page-body-wrapper .page-body { background-color: #f5f9f9; }
+.sidebar-wrapper { background: #fff; }
+.sidebar-wrapper .sidebar-main .sidebar-links > li.active > a,
+.sidebar-wrapper .sidebar-main .sidebar-links > li > a.active { color: #006666 !important; }
+.sidebar-wrapper .sidebar-main .sidebar-links > li.active > a svg,
+.sidebar-wrapper .sidebar-main .sidebar-links > li > a.active svg { stroke: #006666 !important; }
+.sidebar-wrapper .sidebar-main .sidebar-links li .sidebar-submenu li a:hover,
+.sidebar-wrapper .sidebar-main .sidebar-links li .sidebar-submenu li a.active { color: #006666 !important; }
+.dashboard-grid .quick-action-tile .stats-icon-wrapper { background: #e6f7f5 !important; color: #006666 !important; }
+.dashboard-grid .quick-action-tile:hover .quick-action-arrow { color: #0d9488 !important; }
+
+/* Keep the wide wordmark inside both header and sidebar logo slots. */
+.header-logo-wrapper { min-width: 0 !important; max-width: 230px !important; }
+.header-logo-wrapper .logo-wrapper,
+.page-body-wrapper .sidebar-wrapper > .logo-wrapper { display: flex !important; align-items: center !important; min-width: 0 !important; max-width: 100% !important; overflow: hidden !important; }
+.header-logo-wrapper .logo-wrapper a,
+.page-body-wrapper .sidebar-wrapper > .logo-wrapper > a { display: flex !important; align-items: center !important; min-width: 0 !important; max-width: 100% !important; overflow: hidden !important; }
+.header-logo-wrapper .logo-wrapper img,
+.page-body-wrapper .sidebar-wrapper > .logo-wrapper img { display: block !important; width: auto !important; height: auto !important; max-width: 100% !important; max-height: 38px !important; object-fit: contain !important; }
+.header-logo-wrapper .logo-wrapper img { max-width: 190px !important; }
+.page-body-wrapper .sidebar-wrapper > .logo-wrapper img { max-width: 185px !important; max-height: 36px !important; }
+.page-body-wrapper .sidebar-wrapper > .logo-wrapper .toggle-sidebar,
+.header-logo-wrapper > .toggle-sidebar { flex: 0 0 auto !important; }
+.logo-icon-wrapper img { width: 42px !important; height: 42px !important; max-width: 42px !important; object-fit: contain !important; }
+
+@media (max-width: 767.98px) {
+  .header-logo-wrapper { max-width: 175px !important; }
+  .header-logo-wrapper .logo-wrapper img { max-width: 142px !important; max-height: 28px !important; }
+  .page-body-wrapper .sidebar-wrapper > .logo-wrapper { padding-left: 12px !important; padding-right: 10px !important; }
+  .page-body-wrapper .sidebar-wrapper > .logo-wrapper img { max-width: 150px !important; max-height: 30px !important; }
+}

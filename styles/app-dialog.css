@@ -1,0 +1,308 @@
+/* ==========================================================================
+   Shared dialog theme (SweetAlert2 + the app's own confirm modal)
+   --------------------------------------------------------------------------
+   Every popup in the app is themed here rather than at the call site, for two
+   reasons:
+
+   1. Consistency. Dialogs were raised from ~23 different places, each passing
+      its own `confirmButtonColor`, so they only matched by coincidence.
+   2. Those per-call colours were broken. SweetAlert2 turns `confirmButtonColor`
+      into an *inline* background-color, and the values being passed were
+      `var(--theme-primary)` — which isn't defined on the login page (it defines
+      `--primary-color`) — and `var(--theme-danger)`, which isn't defined
+      anywhere. An undefined custom property makes the declaration invalid, so
+      the button lost its background and its white label became invisible: the
+      "Session Conflict" dialog rendered its Continue button as an empty white
+      box. The `!important` rules below deliberately beat those inline styles so
+      a bad value at a call site can't break a dialog again.
+
+   Loaded by both layouts/partials/head.blade.php and auth/login.blade.php,
+   since the login page has its own <head> and does not pull in custom.css.
+   ========================================================================== */
+
+:root {
+    /* Local fallbacks so this file is self-sufficient on pages (login) that
+       don't emit the themed :root block. Real values override these. */
+    --dlg-primary: var(--theme-primary, var(--primary-color, #006666));
+    --dlg-primary-dark: var(--theme-primary-dark, var(--primary-hover, #004d4d));
+    --dlg-radius: var(--radius-md, 8px);
+}
+
+/* ── Popup shell ─────────────────────────────────────────────────────────── */
+.swal2-popup {
+    border-radius: 20px;
+    padding: 28px 24px 24px;
+    font-family: var(--theme-font, 'Roboto'), sans-serif;
+}
+.swal2-title {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #1e293b;
+    padding: 0;
+    margin-bottom: 8px;
+}
+.swal2-html-container {
+    font-size: 0.9375rem;
+    color: #64748b;
+    margin: 0 0 4px;
+    line-height: 1.55;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────────────────
+   Sized and coloured to match .btn-premium / .btn-secondary in custom.css so a
+   dialog's actions look like the app's buttons. */
+.swal2-actions {
+    gap: 12px;
+    margin-top: 24px;
+}
+.swal2-styled.swal2-confirm,
+.swal2-styled.swal2-deny,
+.swal2-styled.swal2-cancel {
+    border-radius: var(--dlg-radius) !important;
+    padding: 9px 22px !important;
+    font-size: 0.875rem !important;
+    font-weight: 600 !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+.swal2-styled.swal2-confirm {
+    background-color: var(--dlg-primary) !important;
+    border: 1px solid var(--dlg-primary) !important;
+    color: #fff !important;
+}
+.swal2-styled.swal2-confirm:hover {
+    background-color: var(--dlg-primary-dark) !important;
+    border-color: var(--dlg-primary-dark) !important;
+}
+.swal2-styled.swal2-cancel {
+    background-color: #fff !important;
+    border: 1px solid #cbd5e1 !important;
+    color: #64748b !important;
+}
+.swal2-styled.swal2-cancel:hover {
+    background-color: #f1f5f9 !important;
+    border-color: #94a3b8 !important;
+    color: #334155 !important;
+}
+.swal2-styled.swal2-deny {
+    background-color: #dc3545 !important;
+    border: 1px solid #dc3545 !important;
+    color: #fff !important;
+}
+.swal2-styled:focus {
+    box-shadow: 0 0 0 3px rgba(0, 102, 102, 0.18) !important;
+}
+
+/* ── Inputs inside a dialog match the app's fields ───────────────────────── */
+.swal2-input,
+.swal2-textarea,
+.swal2-select {
+    border: 1px solid #e1e7ef !important;
+    border-radius: var(--dlg-radius) !important;
+    font-size: 0.875rem;
+    box-shadow: none !important;
+}
+.swal2-input:focus,
+.swal2-textarea:focus,
+.swal2-select:focus {
+    border-color: var(--dlg-primary) !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 102, 102, 0.15) !important;
+}
+.swal2-validation-message {
+    border-radius: var(--dlg-radius);
+    font-size: 0.8125rem;
+}
+
+/* ── Radio Inputs inside SweetAlert2 dialogs ─────────────────────────────── */
+.swal2-popup .swal2-radio,
+.swal2-radio {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    gap: 10px !important;
+    margin: 16px 0 6px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    background: transparent !important;
+}
+.swal2-popup .swal2-radio label,
+.swal2-radio label {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    text-align: left !important;
+    font-size: 0.875rem !important;
+    line-height: 1.5 !important;
+    padding: 12px 14px !important;
+    margin: 0 !important;
+    border: 1.5px solid #e2e8f0 !important;
+    border-radius: var(--dlg-radius, 8px) !important;
+    background: #f8fafc !important;
+    color: #334155 !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease !important;
+}
+.swal2-popup .swal2-radio label:hover,
+.swal2-radio label:hover {
+    background: #f1f5f9 !important;
+    border-color: #cbd5e1 !important;
+}
+.swal2-popup .swal2-radio label:has(input[type="radio"]:checked),
+.swal2-popup .swal2-radio label.active,
+.swal2-radio label:has(input[type="radio"]:checked),
+.swal2-radio label.active {
+    background: rgba(0, 102, 102, 0.05) !important;
+    border-color: var(--dlg-primary, #006666) !important;
+    color: #0f172a !important;
+    box-shadow: 0 1px 3px rgba(0, 102, 102, 0.08) !important;
+}
+.swal2-popup .swal2-radio label input[type="radio"],
+.swal2-radio label input[type="radio"] {
+    margin: 3px 0 0 0 !important;
+    flex: 0 0 auto !important;
+    width: 16px !important;
+    height: 16px !important;
+    cursor: pointer !important;
+    accent-color: var(--dlg-primary, #006666) !important;
+}
+
+/* ── Icon accents follow the theme instead of SweetAlert's stock palette ─── */
+.swal2-icon.swal2-question,
+.swal2-icon.swal2-info {
+    border-color: var(--dlg-primary);
+    color: var(--dlg-primary);
+}
+
+/* ── Toasts ──────────────────────────────────────────────────────────────
+   toastr only started rendering once it stopped being swallowed by the AMD
+   loader (see layouts/partials/scripts.blade.php), so its default sizing had
+   never actually been seen on a phone: a fixed 300px panel pinned to the right
+   gutter. Span the width instead, and match the app's corner radius. */
+/* !important throughout: toastr.min.css is loaded from the body (after this
+   file in the head), so it otherwise wins these at equal specificity. */
+#toast-container > div {
+    border-radius: var(--dlg-radius) !important;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18) !important;
+    opacity: 1 !important;
+}
+/* The app's global colour rules were tinting the message dark against toastr's
+   saturated backgrounds, leaving it barely readable. */
+#toast-container > div,
+#toast-container .toast-message,
+#toast-container .toast-title,
+#toast-container .toast-close-button {
+    color: #fff !important;
+}
+#toast-container .toast-close-button {
+    opacity: 0.85 !important;
+    text-shadow: none !important;
+}
+@media (max-width: 575.98px) {
+    #toast-container.toast-top-right,
+    #toast-container.toast-bottom-right {
+        right: 12px !important;
+        left: 12px !important;
+        width: auto !important;
+    }
+    #toast-container.toast-top-right { top: 12px !important; }
+    #toast-container > div {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        padding: 14px 14px 14px 46px !important;
+    }
+}
+
+/* ── Fallback dialog ─────────────────────────────────────────────────────
+   Used by partials/app-dialog.blade.php only if SweetAlert2 fails to load.
+   Styled to match the dialogs above so it never looks like a browser popup. */
+.app-dialog-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20000;
+    padding: 16px;
+}
+.app-dialog-box {
+    background: #fff;
+    border-radius: 20px;
+    padding: 28px 24px 24px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    font-family: var(--theme-font, 'Roboto'), sans-serif;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.25);
+}
+.app-dialog-title {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 8px;
+}
+.app-dialog-text {
+    font-size: 0.9375rem;
+    color: #64748b;
+    line-height: 1.55;
+    margin: 0 0 20px;
+}
+.app-dialog-input {
+    width: 100%;
+    border: 1px solid #e1e7ef;
+    border-radius: var(--dlg-radius);
+    padding: 9px 12px;
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+}
+.app-dialog-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.app-dialog-actions button {
+    border-radius: var(--dlg-radius);
+    padding: 9px 22px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.app-dialog-confirm {
+    background: var(--dlg-primary);
+    border-color: var(--dlg-primary);
+    color: #fff;
+}
+.app-dialog-cancel {
+    background: #fff;
+    border-color: #cbd5e1;
+    color: #64748b;
+}
+
+/* Radio prompt (Swal `input: 'radio'` rendered by the fallback dialog). */
+.app-dialog-radio {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    text-align: left;
+    font-size: 0.875rem;
+    line-height: 1.45;
+    padding: 9px 11px;
+    margin-bottom: 8px;
+    border: 1px solid #e1e7ef;
+    border-radius: var(--dlg-radius);
+    cursor: pointer;
+}
+.app-dialog-radio:last-of-type {
+    margin-bottom: 20px;
+}
+.app-dialog-radio input {
+    margin-top: 3px;
+    flex: 0 0 auto;
+    cursor: pointer;
+}

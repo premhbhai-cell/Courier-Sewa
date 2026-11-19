@@ -1,0 +1,19 @@
+COURIER SEWA - GITHUB PAGES AUTHENTICATION NOTE
+
+This ZIP includes a FRONT-END-ONLY DEMO account flow for static GitHub Pages:
+- Create Account saves an account in the current browser's localStorage.
+- Login checks that browser-local account and opens dashboard/index.html.
+- Dashboard redirects to login when there is no active browser session.
+- Logout clears the browser session and returns to login.
+
+IMPORTANT LIMITATIONS:
+GitHub Pages is static hosting and cannot securely create or verify real business accounts.
+Accounts created in this demo exist only in the same browser on the same device. They do not
+sync across devices or browsers, and clearing browser storage removes them. The dashboard
+shell can load, but dashboard modules that call the original couriersewa.com backend will
+still need a working backend/API and valid SSL certificate. Do not use this demo for real
+customer passwords, business data, payments, or production authentication.
+
+For production multi-user login and real dashboard data, deploy the original backend/API
+on a server with a valid HTTPS certificate and configure CORS/session cookies for the
+GitHub Pages frontend (or host frontend and backend under the same domain).
