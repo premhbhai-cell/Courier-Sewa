@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#006666">
+<title>Courier Eva | Finance & Accounts</title>
+<link rel="stylesheet" href="../styles/bootstrap.css">
+<link rel="stylesheet" href="../styles/font-awesome.css">
+<link rel="stylesheet" href="../styles/style.css">
+<link rel="stylesheet" href="../styles/custom.css">
+<link rel="stylesheet" href="../styles/couriersewa-theme.css">
+<style>
+:root{--cs:#006666;--cs-dark:#0f766e;--ink:#0f172a;--muted:#64748b;--line:#e2e8f0;--soft:#f8fafc}
+body{background:#f4f7fb;font-family:Poppins,Arial,sans-serif;color:var(--ink)}
+.cs-wrap{max-width:1400px;margin:0 auto;padding:28px}
+.cs-top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+.cs-title{font-size:1.55rem;font-weight:800;margin:0} .cs-sub{color:var(--muted);margin:5px 0 0}
+.cs-card{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 4px 18px rgba(15,23,42,.04);padding:20px;margin-bottom:18px}
+.cs-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+@media(max-width:1000px){.cs-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.cs-wrap{padding:16px}.cs-grid{grid-template-columns:1fr}}
+.cs-stat{padding:18px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,#fff,#fbfcfe)}
+.cs-stat .label{font-size:.78rem;color:var(--muted);font-weight:600} .cs-stat .value{font-size:1.55rem;font-weight:800;margin-top:5px}
+.cs-actions{display:flex;gap:8px;flex-wrap:wrap} .btn-cs{background:var(--cs);border-color:var(--cs);color:#111;font-weight:700} .btn-cs:hover{background:#e6b900;border-color:#e6b900}
+.table-responsive{border:1px solid var(--line);border-radius:12px} table{margin-bottom:0!important} th{font-size:.76rem;text-transform:uppercase;color:#64748b;white-space:nowrap} td{vertical-align:middle}
+.badge-soft{background:#eefbf8;color:#0f766e;border:1px solid #b7ece4;padding:.35rem .55rem;border-radius:999px;font-weight:700;font-size:.72rem}
+.form-control,.form-select{border-radius:10px;border-color:#dbe3ec;min-height:42px} label{font-size:.8rem;font-weight:700;color:#334155}
+.section-title{font-size:1rem;font-weight:800;margin:0 0 12px} .hint{font-size:.78rem;color:var(--muted)}
+</style>
+<style>
+/* Courier Eva unified blue theme — applied to every ERP page */
+:root{--theme-primary:#006666;--theme-primary-dark:#004d4d;--theme-primary-light:rgba(0,102,102,.12);--theme-primary-soft:rgba(0,102,102,.05)}
+.btn-primary,.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.bg-primary,.badge-primary,.label-primary{background-color:#006666!important;border-color:#006666!important;color:#fff!important}
+.text-primary,.txt-primary,.font-primary{color:#006666!important}
+.border-primary{border-color:#006666!important}
+.sidebar-wrapper .sidebar-main .sidebar-links li a.active,.sidebar-wrapper .sidebar-main .sidebar-links li a:hover{background-color:#006666!important;color:#fff!important}
+.sidebar-wrapper .sidebar-main .sidebar-links li a.active svg,.sidebar-wrapper .sidebar-main .sidebar-links li a:hover svg{stroke:#006666!important}
+.page-wrapper .page-header .header-wrapper .nav-right .profile-dropdown li:hover{background-color:#006666!important;color:#fff!important}
+.pagination .page-item.active .page-link{background:#006666!important;border-color:#006666!important;color:#fff!important}
+.form-control:focus,.form-select:focus{border-color:#006666!important;box-shadow:0 0 0 .2rem rgba(0,102,102,.12)!important}
+</style>
+</head>
+<body>
+<div class="cs-wrap">
+
+<div class="cs-top">
+  <div><h1 class="cs-title">Finance & Accounts</h1><p class="cs-sub">Cash, online collections, credit, billing, expenses, ledger and profit/loss.</p></div>
+  <div class="cs-actions"><a class="btn btn-light" data-back href="#">Back</a><button class="btn btn-cs" id="exportFinance">Export CSV</button></div>
+</div>
+<div class="cs-grid" id="stats"></div>
+<div class="cs-card">
+  <h2 class="section-title">Record Collection</h2>
+  <form id="collectionForm" class="row g-3">
+    <div class="col-md-3"><label>AWB / Booking ID</label><input class="form-control" name="awb" required></div>
+    <div class="col-md-2"><label>Mode</label><select class="form-select" name="mode"><option>Cash</option><option>UPI</option><option>Bank Transfer</option><option>Credit</option><option>Other</option></select></div>
+    <div class="col-md-2"><label>Status</label><select class="form-select" name="status"><option>Paid</option><option>Pending</option><option>Partial</option></select></div>
+    <div class="col-md-2"><label>Amount</label><input class="form-control" name="amount" type="number" min="0" step="0.01" required></div>
+    <div class="col-md-3"><label>Branch</label><input class="form-control" name="branch" value="Danapur"></div>
+    <div class="col-12"><label>Notes</label><input class="form-control" name="notes" placeholder="Reference / remarks"></div>
+    <div class="col-12"><button class="btn btn-cs">Save Collection</button></div>
+  </form>
+</div>
+<div class="cs-card">
+  <h2 class="section-title">Recent Financial Entries</h2>
+  <div class="table-responsive"><table class="table table-hover" id="financeTable"><thead><tr><th>Date</th><th>AWB</th><th>Branch</th><th>Mode</th><th>Status</th><th>Amount</th><th>Notes</th></tr></thead><tbody></tbody></table></div>
+</div>
+<script>
+const KEY='cs_finance_entries';
+function getData(){return JSON.parse(localStorage.getItem(KEY)||'[]')}
+function saveData(d){localStorage.setItem(KEY,JSON.stringify(d))}
+function render(){
+ const d=getData(); const paid=d.filter(x=>x.status==='Paid').reduce((s,x)=>s+Number(x.amount||0),0);
+ const pending=d.filter(x=>x.status!=='Paid').reduce((s,x)=>s+Number(x.amount||0),0);
+ const cash=d.filter(x=>x.mode==='Cash'&&x.status==='Paid').reduce((s,x)=>s+Number(x.amount||0),0);
+ const credit=d.filter(x=>x.mode==='Credit').reduce((s,x)=>s+Number(x.amount||0),0);
+ document.getElementById('stats').innerHTML=[
+ ['Collections Received','₹'+paid.toFixed(2)],['Pending Collection','₹'+pending.toFixed(2)],['Cash Collection','₹'+cash.toFixed(2)],['Credit','₹'+credit.toFixed(2)]
+ ].map(x=>'<div class="cs-stat"><div class="label">'+x[0]+'</div><div class="value">'+x[1]+'</div></div>').join('');
+ document.querySelector('#financeTable tbody').innerHTML=d.slice().reverse().map(x=>'<tr><td>'+x.date+'</td><td>'+x.awb+'</td><td>'+x.branch+'</td><td>'+x.mode+'</td><td><span class="badge-soft">'+x.status+'</span></td><td>₹'+Number(x.amount).toFixed(2)+'</td><td>'+x.notes+'</td></tr>').join('')||'<tr><td colspan="7" class="text-center text-muted py-4">No financial entries yet.</td></tr>';
+}
+document.getElementById('collectionForm').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);const d=getData();d.push({date:new Date().toLocaleString('en-IN'),awb:f.get('awb'),branch:f.get('branch'),mode:f.get('mode'),status:f.get('status'),amount:f.get('amount'),notes:f.get('notes')});saveData(d);e.target.reset();e.target.branch.value='Danapur';render();});
+document.getElementById('exportFinance').addEventListener('click',()=>{const d=getData();const rows=[['Date','AWB','Branch','Mode','Status','Amount','Notes'],...d.map(x=>[x.date,x.awb,x.branch,x.mode,x.status,x.amount,x.notes])];const csv=rows.map(r=>r.map(v=>'"'+String(v??'').replaceAll('"','""')+'"').join(',')).join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='courier-sewa-finance.csv';a.click();});
+render();
+</script></div>
+<script>
+(function(){
+  document.querySelectorAll('[data-back]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();history.back();});});
+})();
+</script>
+</body></html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Courier Eva — Create Account</title><link rel="stylesheet" href="portal.css"></head>
+<body>
+<div class="login"><div class="login-card">
+<img class="login-logo" src="../images/logo.png" alt="Courier Eva">
+<h1 id="title">Create Account</h1>
+<p class="muted" style="text-align:center">Create your account first, then continue to your assigned Courier Eva panel.</p>
+<form id="f">
+<div class="field"><label>Full Name</label><input id="name" required placeholder="Your full name"></div>
+<div class="field" style="margin-top:12px"><label>Email</label><input id="email" type="email" required placeholder="you@example.com"></div>
+<div class="field" style="margin-top:12px"><label>Password</label><input id="password" type="password" minlength="6" required placeholder="Minimum 6 characters"></div>
+<div class="field" style="margin-top:12px"><label>Confirm Password</label><input id="confirm" type="password" minlength="6" required placeholder="Repeat password"></div>
+<div class="actions"><button class="nav-btn primary" type="submit">Create Account & Continue</button><a class="nav-btn" id="back" href="../index.html">Back to Website</a></div>
+</form>
+<div id="err" style="color:#b22e2e;font-size:12px;margin-top:10px"></div>
+<div class="notice">Account registration is a JavaScript/localStorage demo. Production authentication must be handled by a secure backend.</div>
+</div></div>
+<script>
+(function(){
+ const p=new URLSearchParams(location.search); const role=p.get('role')||'customer';
+ const title={customer:'Create Customer Account',staff:'Create Staff Account',delivery:'Create Delivery Account'}[role]||'Create Account';
+ document.getElementById('title').textContent=title;
+ document.getElementById('back').href=role==='customer'?'customer-login.html':role==='staff'?'staff-login.html':'delivery-login.html';
+ document.getElementById('f').onsubmit=function(e){e.preventDefault();
+  const name=document.getElementById('name').value.trim(), email=document.getElementById('email').value.trim().toLowerCase(), pw=document.getElementById('password').value, cp=document.getElementById('confirm').value;
+  if(pw!==cp){document.getElementById('err').textContent='Passwords do not match.';return;}
+  if(role==='customer'){localStorage.setItem('courierEvaCustomerAccount',JSON.stringify({name,email,password:pw}));localStorage.setItem('courierEvaCustomerSession','1');location.href='customer-portal.html';return;}
+  localStorage.setItem('courierEvaUser_'+role,JSON.stringify({name,email,password:pw,role}));
+  localStorage.setItem('courierEvaPortalSession',JSON.stringify({role,name,email,loginAt:new Date().toISOString()}));
+  location.href=role==='staff'?'staff-portal.html':'delivery-portal.html';
+ };
+})();
+</script>
+</body></html>

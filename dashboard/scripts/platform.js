@@ -1,4 +1,4 @@
-/* ESECRM platform UI behaviours: password toggles, app switcher, landing nav.
+/* Courier Eva platform UI behaviours: password toggles, app switcher, landing nav.
    Vanilla JS, no dependencies — loaded by esecrm::layouts.* and usable from
    any app page that includes the switcher component. */
 (function () {

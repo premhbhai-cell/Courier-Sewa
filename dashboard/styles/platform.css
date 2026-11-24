@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ESECRM platform UI — shared by esecrm.com and every subdomain app.
+   Courier Eva platform UI — shared by esecrm.com and every subdomain app.
    Auth pages (split brand/form), app-selection cards, the "Sign in with
    esecrm.com" button and the in-app switcher. Every class is prefixed `es-`
    so it can sit next to Bootstrap (sales/cep/sms) or bare CSS (vcard).

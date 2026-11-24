@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ESECRM Courier – Custom Design System
+   Courier Eva Courier – Custom Design System
    Single source of truth for all overrides & utilities
    ========================================================================== */
 
@@ -6385,7 +6385,7 @@ body.dark-only .head-options .status-filter-group .btn:hover {
     accent-color: var(--theme-primary, #006666) !important;
 }
 
-/* esecrm.com app switcher in the header (the d-none rule above must not hide it) */
+/* Courier Eva app switcher in the header (the d-none rule above must not hide it) */
 .page-wrapper .page-header .header-wrapper .nav-right > ul.nav-menus > li.header-app-switcher { display: flex; align-items: center; }
 @media (max-width: 767.98px) { .page-wrapper .page-header .header-wrapper .nav-right > ul.nav-menus > li.header-app-switcher { display: none !important; } }
 /* App switcher (from the ESECRM package): 8px corners instead of a pill */

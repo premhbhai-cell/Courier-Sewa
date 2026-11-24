@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ESECRM platform UI — shared by esecrm.com and every subdomain app.
+   Courier Eva platform UI — shared by esecrm.com and every subdomain app.
    Auth pages (split brand/form), app-selection cards, the "Sign in with
    esecrm.com" button and the in-app switcher. Every class is prefixed `es-`
    so it can sit next to Bootstrap (sales/cep/sms) or bare CSS (vcard).
@@ -341,3 +341,14 @@
     .es-auth-brand-body p, .es-auth-brand-list, .es-auth-brand-foot { display: none; }
     .es-auth-panel { padding: 32px 18px; }
 }
+
+/* Courier Eva brand override — supplied logo */
+:root{--courier-eva-blue:#0b477e;--courier-eva-orange:#f47a16}
+.logo-wrapper img[src*="logo.png"], .header-logo-wrapper img[src*="logo.png"]{max-height:58px!important;width:auto!important;object-fit:contain}
+.sidebar-wrapper .logo-wrapper img[src*="logo.png"]{max-height:58px!important;width:auto!important}
+.brand-logo img[src*="logo.png"]{max-height:78px!important;width:auto!important;object-fit:contain}
+.ls-brand img[src*="logo.png"]{max-height:56px!important;width:auto!important;object-fit:contain}
+@media(max-width:576px){.brand-logo img[src*="logo.png"],.ls-brand img[src*="logo.png"]{max-height:52px!important}}
+/* Courier Eva supplied PNG branding */
+.logo-wrapper img[src*="logo.png"], .header-logo-wrapper img[src*="logo.png"] { max-width: 260px !important; width: auto !important; height: auto !important; }
+.brand-logo img[src*="logo.png"], .ls-brand img[src*="logo.png"] { max-width: 300px !important; width: auto !important; height: auto !important; }

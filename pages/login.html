@@ -4,24 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Complete Courier Management & Business ERP</title>
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Courier Sewa">
+    <meta property="og:site_name" content="Courier Eva">
     <meta property="og:locale" content="en_IN">
-    <meta property="og:title" content="Login | Courier Sewa">
-    <meta property="og:description" content="Sign in to Courier Sewa - bookings with auto AWB, live tracking, POD, rate cards and GST invoicing in one platform.">
+    <meta property="og:title" content="Login | Courier Eva">
+    <meta property="og:description" content="Sign in to Courier Eva - bookings with auto AWB, live tracking, POD, rate cards and GST invoicing in one platform.">
     <meta property="og:url" content="https://couriersewa.com/login">
     <meta property="og:image" content="https://couriersewa.com/og/og-image.jpg?v=1793197707">
     <meta property="og:image:secure_url" content="https://couriersewa.com/og/og-image.jpg?v=1793197707">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Courier Sewa - run your courier business in one platform">
+    <meta property="og:image:alt" content="Courier Eva - run your courier business in one platform">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Login | Courier Sewa">
-    <meta name="twitter:description" content="Sign in to Courier Sewa - bookings with auto AWB, live tracking, POD, rate cards and GST invoicing in one platform.">
+    <meta name="twitter:title" content="Login | Courier Eva">
+    <meta name="twitter:description" content="Sign in to Courier Eva - bookings with auto AWB, live tracking, POD, rate cards and GST invoicing in one platform.">
     <meta name="twitter:image" content="https://couriersewa.com/og/og-image.jpg?v=1793197707">
-    <meta name="twitter:image:alt" content="Courier Sewa - run your courier business in one platform">
-    <link rel="icon" href="https://esecrm.com/uploads/branding/global/favicon.png?v=1789641303" type="image/x-icon">
-    <link rel="shortcut icon" href="https://esecrm.com/uploads/branding/global/favicon.png?v=1789641303" type="image/x-icon">
+    <meta name="twitter:image:alt" content="Courier Eva - run your courier business in one platform">
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -328,7 +328,7 @@
     
     <div class="brand-content-wrapper" style="position: relative; z-index: 2; padding: 3.5rem 4.5rem; width: 100%; max-width: 650px;">
         <div class="brand-logo" style="margin-bottom: 3.5rem; display: flex; align-items: center;">
-            <img class="img-fluid" src="../images/logo.png" alt="Courier Sewa Logo" style="max-height: 55px; width: auto; object-fit: contain;">
+            <img class="img-fluid" src="../images/logo.png" alt="Courier Eva Logo" style="max-height: 70px; width: auto; object-fit: contain;">
         </div>
         
         <h1 class="brand-title" style="color: #ffffff; font-size: 3.25rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.25rem; letter-spacing: -1px;">
@@ -390,11 +390,11 @@
             <div class="login-card">
                 <div class="login-header">
                     <h2>Welcome Back</h2>
-                    <p>Sign in to continue to Courier CRM</p>
+                    <p>Sign in to continue to Courier Eva ERP</p>
                     <div class="title-line"></div>
                 </div>
 
-                <form action="https://couriersewa.com/login" method="POST">
+                <form id="courierEvaLoginForm" action="#" method="POST">
                     <input type="hidden" name="_token" value="qZTtKDt5PrtRnINEKWqLC5ixwSZAF7xf1rXmayrD" autocomplete="off">
                     
                     <div class="form-group">
@@ -414,6 +414,21 @@
                         </div>
                     </div>
 
+                    <div class="form-group" style="margin-bottom:1rem;">
+                        <label class="form-label">Login Role</label>
+                        <div class="input-icon-container">
+                            <i class="fa fa-users input-icon-left"></i>
+                            <select class="form-control with-icon" id="demoRole" name="role" style="padding-left:2.45rem;">
+                                <option value="super-admin">Super Admin</option>
+                                <option value="admin">Admin</option>
+                                <option value="branch-admin">Branch Admin</option>
+                                <option value="staff">Branch Staff</option>
+                                <option value="collection-boy">Collection Boy</option>
+                                <option value="delivery">Delivery Executive</option>
+                            </select>
+                        </div>
+                    </div>
+
                     <div class="form-actions">
                         <label class="checkbox-container">
                             <input type="checkbox" name="remember" id="remember">
@@ -427,7 +442,7 @@
                     </button>
 
                     <div class="register-prompt">
-                        New to Courier CRM? <a href="../pages/register.html">Create an Account →</a>
+                        New to Courier Eva ERP? <a href="../pages/register.html">Create an Account →</a>
                     </div>
                 </form>
 
@@ -588,4 +603,22 @@
     </script>
 
 <script src="../scripts/github-demo-auth.js"></script>
+<script>
+(function(){
+  var form=document.getElementById('courierEvaLoginForm'); if(!form) return;
+  var users={
+    'super-admin':{name:'Super Admin',email:'superadmin@couriereva.in',password:'123456',branch:'All Branches',home:'../dashboard/panels/super-admin.html'},
+    'admin':{name:'Admin',email:'admin@couriereva.in',password:'123456',branch:'All Branches',home:'../dashboard/panels/admin.html'},
+    'branch-admin':{name:'Branch Admin',email:'branchadmin@couriereva.in',password:'123456',branch:'Danapur',home:'../dashboard/panels/branch-admin.html'},
+    'staff':{name:'Branch Staff',email:'staff@couriereva.in',password:'123456',branch:'Danapur',home:'../dashboard/panels/staff.html'},
+    'collection-boy':{name:'Collection Boy',email:'collection@couriereva.in',password:'123456',branch:'Danapur',home:'../dashboard/panels/collection-boy.html'},
+    'delivery':{name:'Delivery Executive',email:'delivery@couriereva.in',password:'123456',branch:'Danapur',home:'../dashboard/panels/delivery.html'}
+  };
+  var role=document.getElementById('demoRole'), email=form.querySelector('[name=email]'), pass=form.querySelector('[name=password]');
+  role.addEventListener('change',function(){var u=users[this.value];if(u){email.value=u.email;pass.value=u.password;}});
+  role.dispatchEvent(new Event('change'));
+  form.addEventListener('submit',function(e){e.preventDefault();var u=users[role.value];if(!u || email.value.trim().toLowerCase()!==u.email || pass.value!==u.password){if(window.Swal) Swal.fire({icon:'error',title:'Login failed',text:'Use the demo credentials for the selected role.'});return;}localStorage.setItem('courierEvaSession',JSON.stringify({role:role.value,name:u.name,email:u.email,branch:u.branch,loginAt:new Date().toISOString()}));location.href=u.home;});
+})();
+</script>
+
 </body></html>

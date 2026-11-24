@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#006666">
+<title>Courier Eva | Audit Logs</title>
+<link rel="stylesheet" href="../styles/bootstrap.css">
+<link rel="stylesheet" href="../styles/font-awesome.css">
+<link rel="stylesheet" href="../styles/style.css">
+<link rel="stylesheet" href="../styles/custom.css">
+<link rel="stylesheet" href="../styles/couriersewa-theme.css">
+<style>
+:root{--cs:#006666;--cs-dark:#0f766e;--ink:#0f172a;--muted:#64748b;--line:#e2e8f0;--soft:#f8fafc}
+body{background:#f4f7fb;font-family:Poppins,Arial,sans-serif;color:var(--ink)}
+.cs-wrap{max-width:1400px;margin:0 auto;padding:28px}
+.cs-top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+.cs-title{font-size:1.55rem;font-weight:800;margin:0} .cs-sub{color:var(--muted);margin:5px 0 0}
+.cs-card{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 4px 18px rgba(15,23,42,.04);padding:20px;margin-bottom:18px}
+.cs-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+@media(max-width:1000px){.cs-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.cs-wrap{padding:16px}.cs-grid{grid-template-columns:1fr}}
+.cs-stat{padding:18px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,#fff,#fbfcfe)}
+.cs-stat .label{font-size:.78rem;color:var(--muted);font-weight:600} .cs-stat .value{font-size:1.55rem;font-weight:800;margin-top:5px}
+.cs-actions{display:flex;gap:8px;flex-wrap:wrap} .btn-cs{background:var(--cs);border-color:var(--cs);color:#111;font-weight:700} .btn-cs:hover{background:#e6b900;border-color:#e6b900}
+.table-responsive{border:1px solid var(--line);border-radius:12px} table{margin-bottom:0!important} th{font-size:.76rem;text-transform:uppercase;color:#64748b;white-space:nowrap} td{vertical-align:middle}
+.badge-soft{background:#eefbf8;color:#0f766e;border:1px solid #b7ece4;padding:.35rem .55rem;border-radius:999px;font-weight:700;font-size:.72rem}
+.form-control,.form-select{border-radius:10px;border-color:#dbe3ec;min-height:42px} label{font-size:.8rem;font-weight:700;color:#334155}
+.section-title{font-size:1rem;font-weight:800;margin:0 0 12px} .hint{font-size:.78rem;color:var(--muted)}
+</style>
+<style>
+/* Courier Eva unified blue theme — applied to every ERP page */
+:root{--theme-primary:#006666;--theme-primary-dark:#004d4d;--theme-primary-light:rgba(0,102,102,.12);--theme-primary-soft:rgba(0,102,102,.05)}
+.btn-primary,.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.bg-primary,.badge-primary,.label-primary{background-color:#006666!important;border-color:#006666!important;color:#fff!important}
+.text-primary,.txt-primary,.font-primary{color:#006666!important}
+.border-primary{border-color:#006666!important}
+.sidebar-wrapper .sidebar-main .sidebar-links li a.active,.sidebar-wrapper .sidebar-main .sidebar-links li a:hover{background-color:#006666!important;color:#fff!important}
+.sidebar-wrapper .sidebar-main .sidebar-links li a.active svg,.sidebar-wrapper .sidebar-main .sidebar-links li a:hover svg{stroke:#006666!important}
+.page-wrapper .page-header .header-wrapper .nav-right .profile-dropdown li:hover{background-color:#006666!important;color:#fff!important}
+.pagination .page-item.active .page-link{background:#006666!important;border-color:#006666!important;color:#fff!important}
+.form-control:focus,.form-select:focus{border-color:#006666!important;box-shadow:0 0 0 .2rem rgba(0,102,102,.12)!important}
+</style>
+</head>
+<body>
+<div class="cs-wrap">
+
+<div class="cs-top"><div><h1 class="cs-title">Audit Logs</h1><p class="cs-sub">Track who changed what and when across the ERP.</p></div><div class="cs-actions"><a class="btn btn-light" data-back href="#">Back</a><button class="btn btn-cs" id="seed">Add Demo Audit</button></div></div>
+<div class="cs-card"><div class="table-responsive"><table class="table"><thead><tr><th>Date/Time</th><th>User</th><th>Module</th><th>Action</th><th>Record</th><th>Details</th></tr></thead><tbody id="at"></tbody></table></div></div>
+<script>
+const K='cs_audit';function d(){return JSON.parse(localStorage.getItem(K)||'[]')}function r(){at.innerHTML=d().slice().reverse().map(x=>'<tr><td>'+x.time+'</td><td>'+x.user+'</td><td>'+x.module+'</td><td><span class="badge-soft">'+x.action+'</span></td><td>'+x.record+'</td><td>'+x.details+'</td></tr>').join('')||'<tr><td colspan="6" class="text-center text-muted py-5">No audit events recorded.</td></tr>'}seed.onclick=()=>{let a=d();a.push({time:new Date().toLocaleString('en-IN'),user:'Super Admin',module:'Bookings',action:'UPDATE',record:'CS261100001',details:'Booking status updated to Delivered'});localStorage.setItem(K,JSON.stringify(a));r()};r();
+</script></div>
+<script>
+(function(){
+  document.querySelectorAll('[data-back]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();history.back();});});
+})();
+</script>
+</body></html>
